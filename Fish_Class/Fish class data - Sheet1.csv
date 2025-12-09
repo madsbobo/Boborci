@@ -1,0 +1,693 @@
+Observer ,Date,Location ,Species,Body_Size_cm ,Group_Size,Habitat,Pass,Time_Start,Time_End,Depth (ft)
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,4,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus ,12.5,12,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus ,12.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,7.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus,7.5,12,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus ,12.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,Z. velifer,7.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,Z. velifer,7.5,4,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus,12.5,15,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,12.5,4,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,Z. cornutus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. lunulatus,12.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus,12.5,15,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,S. psittacus,12.5,10,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,S. psittacus,7.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,Z. velifer ,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,S. psittacus,7.5,30,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,G. varius ,17.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus ,17.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,L. fulvus,22.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,Z. cornutus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus ,7.5,23,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. lunulatus,12.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,17.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus ,7.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus,17.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,S. psittacus ,7.5,10,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,Z. velifer,17.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,S. psittacus ,12.5,7,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,L. fulvus,17.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,G. varius,12.5,4,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,17.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,S. psittacus,7.5,24,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,4,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. auriga,12.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,Z. flavescens,17.5,6,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,17.5,4,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus,22.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus ,7.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,G. varius,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,17.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. spilurus,12.5,12,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. lunulatus ,17.5,2,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey ,17.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,3,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,T. duperrey,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,S. psittacus,7.5,32,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,C. auriga,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,Z. flavescens ,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB ,5-12-2025,Hinalea ,A. triostegus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. velifer,2.5,3,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,6,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. spilurus,2.5,24,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,L. fulvus,17.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,7,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,30,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. cornutus,12.5,4,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus,12.5,6,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,12,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,L. fulvus,22.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,26,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus,27.5,50,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. auriga,17.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. melampygus,27.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,S. psittacus,17.5,20,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. flavescens,12.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,4,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,L. fulvus,27.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. auriga,17.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,T. duperrey,12.5,3,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,L. fulvus,27.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. flavescens,12.5,6,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,G. varius,17.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus ,27.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus,27.5,17,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,L. fulvus,17.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,L. fulvus,27.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus ,17.5,7,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,17.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,5,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,S. psittacus ,7.5,7,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,11,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,T. duperrey,12.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus ,12.5,20,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,5,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,15,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. auriga,17.5,1,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,6,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. spilurus,12.5,13,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,G. varius,17.5,4,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,M. flavolineatus,12.5,12,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,7.5,3,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,14,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,5,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,5,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,7,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,G. varius,12.5,3,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,Z. cornutus,12.5,5,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. auriga,17.5,5,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,13,Patchy_Reef,2,10:55,11:21,3
+MB,5-12-2025,Hinalea,C. spilurus,12.5,6,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,5,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,10,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,14,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S.psittacus,2.5,28,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,T. duperrey,12.5,1,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,22,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,14,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,Z. velifer,2.5,16,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,28,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,23,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,7.5,25,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,1,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,14,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,Z. velfer,7.5,10,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,20,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,7.5,26,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,6,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,28,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,4,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S.psittacus,12.5,38,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,10,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,24,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,4,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,2,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,10,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,Z. velifer,12.5,9,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,20,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,32,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,17.5,2,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,36,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,7,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,5,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,2.5,24,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,C. auriga,7.5,5,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,9,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,5,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,28,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,Z. velifer,2.5,12,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,31,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,7.5,20,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,T. duperrey,12.5,1,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,13,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,L. fulvus,17.5,1,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,C. auriga,17.5,1,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,Z. velifer,12.5,2,Reef_Flat ,3,11:29,12:01,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,2,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,L. fulvus,22.5,2,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,2,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,14,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,Z. flavescens,12.5,3,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,Z. cornutus,12.5,20,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,7,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,11,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,Z. cornutus,12.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,Z. flavescens,12.5,25,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,2,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,9,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,5,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,C. spilurus,12.5,13,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,5,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,C. melampygus,27.5,8,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,5,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,S. psittacus,17.5,10,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,L. fulvus,12.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,6,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,16,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,2,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,M. flavolineatus,32.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,12,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,C. auriga,17.5,2,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,Z. cornutus,12.5,5,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,L. fulvus,17.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,6,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,5,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,L. fulvus,12.5,1,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,21,Patchy_Reef,4,12:07,12:26,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,12,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,6,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,10,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,L. fulvus,17.5,5,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,5,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,8,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,17.5,2,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,3,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,32,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,3,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S.psittacus,12.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,7.5,3,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,5,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,22,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. lunulatus,17.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,6,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,Z. cornutus,12.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,10,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,24,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,7.5,10,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,10,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,5,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S.psittacus,7.5,18,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,T. duperrey,12.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,24,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,5,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,7,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S.psittacus,12.5,14,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,12,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,11,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,7,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. auriga,17.5,16,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,8,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,10,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,7.5,5,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,11,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,15,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,28,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,Z. velifer,17.5,6,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,Z. cornutus,12.5,2,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,18,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,24,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,2,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,12,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,L. fulvus,22.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,7.5,18,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,8,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,9,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,10,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,5,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,G. varius,12.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C.spilurus,12.5,17,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C.spilurus,17.5,3,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,2.5,22,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,C. lunulatus,12.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,26,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,T. duperrey,12.5,1,Reef_Flat ,5,12:44,13:14,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,C.spilurus,17.5,3,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,8,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,L. fulvus,17.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,4,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,2,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,S. psittacus,17.5,`10,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,22.5,15,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,Z. cornutus,12.5,12,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,15,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,L. fulvus,17.5,3,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,5,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,C. auriga,17.5,2,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,G. varius,17.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,Z. flavescens,12.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,M. flavolineatus,12.5,5,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,2,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,5,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,S. psittacus,17.5,5,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,M. flavolineatus,27.5,8,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,M. flavolineatus,27.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,L. fulvus,12.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,5,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,5,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,10,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,2,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,Z. flavescens,17.5,6,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,T. duperrey,12.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,17.5,3,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,C. spilurus,17.5,4,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,S. psittacus,12.5,6,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,C. melampygus,27.5,9,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,Z. velifer,7.5,14,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,17.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,A. triostegus,12.5,4,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,E. nebulosa,22.5,1,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,N. unicornis,32.5,8,Patchy_Reef,6,13:20,13:39,3
+MB,5-12-2025,Hinalea,F. commersonii,12.5,1,Sand,7,13:43,14:00,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,3,Sand,8,14:10,14:45,3
+MB,5-12-2025,Hinalea,A. triostegus,17.5,9,Sand,8,14:10,14:45,3
+MB,5-12-2025,Hinalea,M. flavolineatus,12.5,3,Sand,8,14:10,14:45,3
+MB,5-12-2025,Hinalea,A. triostegus,17.5,1,Sand,8,14:10,14:45,3
+MB,5-12-2025,Hinalea,M. flavolineatus,32.5,1,Sand,8,14:10,14:45,3
+MB,5-12-2025,Hinalea,M. flavolineatus,22.5,1,Sand,8,14:10,14:45,3
+MB,5-12-2025,Hinalea,M. flavolineatus,17.5,11,Sand,8,14:10,14:45,3
+MB,5-12-2025,Hinalea,A. glossodonta,32.5,4,Sand,8,14:10,14:45,3
+MB,5-12-2025,Hinalea,C. melampygus,22.5,2,Sand,9,14:50,15:00,3
+MB,5-12-2025,Hinalea,M. flavolineatus,22.5,2,Sand,9,14:50,15:00,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,18,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,6,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,21,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,2,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,2.5,4,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,19,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,22,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. velifer,2.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,11,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. cornutus,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,2,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,25,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,2.5,18,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,8,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,24,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,14,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,21,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,T. duperrey,22.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,25,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,3,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,L. fulvus,17.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,13,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,C. lunulatus,17.5,2,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,2.5,22,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,28,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,20,Reef_Flat ,1,10:18,10:45,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,L. fulvus,22.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,7,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. flavescens,17.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. auriga,17.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. cornutus,12.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. flavescens,12.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,9,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,T. duperrey,12.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,16,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,17.5,24,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,3,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. auriga,22.5,2,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. flavescens,17.5,2,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,16,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. lunulatus,12.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,2,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,T. duperrey,22.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,3,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,5,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,11,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,4,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,13,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,8,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,29,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,9,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,5,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,26,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,18,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,L. fulvus,27.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. flavescens,17.5,3,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,6,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,5,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,4,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,1,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,3,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,5,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,2,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,C. auriga,7.5,10,Patchy_Reef,2,10:55,11:21,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,3,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,13,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. auriga,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,11,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,7,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,14,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,7,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,15,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. auriga,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,4,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,3,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,25,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,8,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,13,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,12,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,22,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,G. varius,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,4,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,3,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,11,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,3,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,5,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,5,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,3,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,7,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,18,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,5,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,7,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. flavescens,17.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,3,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,22.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,3,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. lunulatus,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. cornutus,17.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,11,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,T. duperrey,22.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. auriga,22.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,6,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,8,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. cornutus,17.5,3,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. lunulatus,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,5,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,7,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,9,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. auriga,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,22.5,2,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,9,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,4,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,15,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,13,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,6,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. auriga,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,27,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,16,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,2.5,19,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. auriga,12.5,1,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,9,Reef_Flat ,3,11:29,12:01,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,3,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,C. auriga,22.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,13,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,L. fulvus,27.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,C. lunulatus,22.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,17.5,8,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,L. fulvus,22.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,17.5,11,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,6,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,17.5,13,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,C. auriga,22.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,17.5,7,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,S. psittacus,17.5,9,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,27.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,27.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,Z. flavescens,17.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,C. spilurus,22.5,3,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,17.5,3,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,L. fulvus,22.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,29,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,C. spilurus,22.5,8,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,L. fulvus,22.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,Z. flavescens,22.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,11,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,11,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,Z. flavescens,17.5,2,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,17.5,4,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,S. psittacus,17.5,8,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,3,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,Z. cornutus,12.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,6,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,L. fulvus,27.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,22.5,3,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,4,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,7,Patchy_Reef,4,12:07,12:26,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,2,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,L. fulvus,22.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,22.5,5,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,16,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,7,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,14,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,35,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,2,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,T. duperrey,22.5,2,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,17,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,28,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,13,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. flavescens,22.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,5,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,26,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,7,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,11,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,29,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,5,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,17.5,5,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,5,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,8,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,2.5,28,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,16,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,31,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,L. fulvus,22.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,18,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,9,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,2,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,17.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,40,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,4,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,13,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,6,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,7.5,16,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,36,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,2.5,29,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,7,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,18,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,8,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,T. duperrey,17.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,2,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,5,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,17,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,8,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,23,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,11,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,1,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,9,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,5,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,5,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,2,Reef_Flat ,5,12:44,13:14,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,24,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,3,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,6,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. lunulatus,17.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,19,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. spilurus,17.5,9,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. auriga,17.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. flavescens,17.5,5,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,G. varius,22.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,17.5,16,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,L. fulvus,27.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,3,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. auriga,17.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,6,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,S. psittacus,12.5,19,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,14,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,17,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,7,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,6,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,10,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,N. unicornis,32.5,3,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,S. psittacus,7.5,13,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,2,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,A. triostegus,12.5,5,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. velifer,7.5,3,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,A. triostegus,17.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. velifer,12.5,1,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. spilurus,12.5,8,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. auriga,22.5,2,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,Z. flavescens,17.5,6,Patchy_Reef,6,13:20,13:39,3
+NGS,5-12-2025,Hinalea,C. melampygus,27.5,9,Sand,7,13:43,14:00,3
+NGS,5-12-2025,Hinalea,C. melampygus,27.5,1,Sand,7,13:43,14:00,3
+NGS,5-12-2025,Hinalea,C. melampygus,27.5,1,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,32.5,3,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,27.5,1,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,C. melampygus,32.5,2,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,27.5,1,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,27.5,3,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,32.5,1,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,22.5,1,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,27.5,1,Sand,8,14:10,14:45,3
+NGS,5-12-2025,Hinalea,M. flavolineatus,27.5,1,Sand,8,14:10,14:45,3
