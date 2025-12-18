@@ -18,7 +18,7 @@ library(knitr)
 library(broom)
 library(kableExtra)
 library(webshot2)
-
+library
 #Import data
 Data_final<-read.csv(here("Fish_Class", "Data", "Fish_Data_Final.csv"))
 #View(Data_final)
@@ -75,6 +75,10 @@ habitat_counts<-clean_data%>%
     Count = n()
   )
 
+Sand<-clean_data%>%
+  group_by(Habitat, Trophic_Guild)%>%
+  summarise(Count=n())
+View(Sand)
 #View(habitat_counts)
 
 
@@ -155,9 +159,8 @@ carnivore_model<-lm(Group_Size~Habitat+Body_Size_cm, data=carnivore_data)
 check_model(carnivore_model)
 
 summary(carnivore_model)
-carivore_anova<-car::Anova(carnivore_model, type=2)
+carnivore_anova<-car::Anova(carnivore_model, type=2)
 car::Anova(carnivore_model, type=2)
-
 
 #run emmeans
 em_carn <- emmeans(carnivore_model, ~Habitat)
@@ -183,9 +186,19 @@ my_colors <- c(
   "Sand"  = "#56B4E9"
 )
 
-
+preds <- predict(carnivore_model, newdata = model_df_carn, se.fit = TRUE)
+model_df_carn$yvar <- preds$fit
+model_df_carn$lwr  <- preds$fit - (1.96 * preds$se.fit)
+model_df_carn$upr  <- preds$fit + (1.96 * preds$se.fit)
 
 ggplot()+
+  geom_ribbon(data = model_df_carn,
+              aes(x = Body_Size_cm, 
+                  ymin = lwr, 
+                  ymax = upr, 
+                  fill = Habitat), 
+              alpha = 0.15,    
+              show.legend = FALSE) +
   geom_point(data=carnivore_data,
              aes(x=Body_Size_cm,
                  y=Group_Size, colour= Habitat)) +
@@ -235,6 +248,9 @@ emmip(ref.grid, ~Body_Size_cm)
 
 model_df_herb <- emmip(ref.grid, ~ Body_Size_cm,
                   plotit = FALSE)
+
+
+
 
 ggplot()+
   geom_point(data=herbivore_data,
@@ -299,35 +315,94 @@ ggplot()+
 
 
 ###This is me actually trying to export the model summaries
+carn_summ_df <- tidy(carnivore_model) %>%
+  mutate(
+    estimate = formatC(estimate, digits = 2, format = "e"),
+    std.error = formatC(std.error, digits = 2, format = "e"),
+    p.value = formatC(p.value, digits = 2, format = "e")
+  )
 
-sci_format <- function(x) formatC(x, digits = 2, format = "e")
 
-carn_summ<-modelsummary(carnivore_model,
-             fmt = fmt_scientific(digits = 2), # Formats p-values/stats
-             estimate = "{estimate}{stars}",    # Adds significance stars if wanted
-             statistic = "p.value",             # Shows p-values instead of Std. Error
-             gof_map = c("adj.r.squared", "nobs"),
-             output = "kableExtra",
-             caption = "Table 3. Carnivore Model Summary") %>%
-  kable_styling(bootstrap_options = "striped", full_width = FALSE)
-save_kable(carn_summ, file = "carn_summ.html")
+mod_glance <- glance(carnivore_model)
+adj_r2_val <- format(round(mod_glance$adj.r.squared, 3), nsmall = 3)
+n_obs <- mod_glance$nobs
+
+
+summary_row <- data.frame(
+  term = c("Adj. R2", "N"),
+  estimate = c(adj_r2_val, as.character(n_obs)),
+  std.error = "", 
+  statistic = "", 
+  p.value = ""
+)
+
+#Combine and make the table
+carn_sum_model_full<-bind_rows(carn_summ_df, summary_row) %>%
+  kable(
+    caption = "Table 3. Carnivore Model Summary",
+    col.names = c("Predictor", "Estimate", "Std. Error", "t-stat", "p-value"),
+    align = "lcccc"
+  ) %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE) %>%
+  # Make the last two rows (Adj R2 and N) bold to stand out
+  row_spec((nrow(carn_summ_df) + 1):(nrow(carn_summ_df) + 2), bold = TRUE, italic = TRUE)
+
+save_kable(carn_sum_model_full, file = "carn_summ_full.html")
+
+
+
+
+
+
+
+
+
+#########
+adj_r2_val <- glance(carnivore_model)$adj.r.squared
+
+carn_summ<-tidy(carnivore_model) %>%
+  mutate(
+    across(where(is.numeric), ~ formatC(.x, digits = 2, format = "e"))
+  ) %>%
+  kable(caption = "Table 3. Carnivore Model Summary") %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE) %>%
+  footnote(general = paste("Adjusted R-squared:", 
+                           round(glance(carnivore_model)$adj.r.squared, 3)))
+save_kable(carn_summ, file = "carn_summ_done.html")
 
 carn_anova<-tidy(carnivore_anova) %>%
+  mutate(
+    across(where(is.numeric), ~ formatC(.x, digits = 2, format = "e"))
+  ) %>%
   kable(caption = "Table 4. Carnivore ANOVA results") %>%
   kable_styling(bootstrap_options = "striped", full_width = FALSE)
 save_kable(carn_anova, file = "carn_anova.html")
 
 carn_posthoc<-tidy(pairs(em_carn))%>%
+  mutate(
+    across(where(is.numeric), ~ formatC(.x, digits = 2, format = "e"))
+  ) %>%
   kable(caption = "Table 5. Carnivore Post- Hoc results") %>%
   kable_styling(bootstrap_options = "striped", full_width = FALSE)
 save_kable(carn_posthoc, file = "carn_posthoc.html")
 
-herb_model_summ<- tidy(herbivore_model)%>%
+
+
+adj_r2_val <- glance(herbivore_model)$adj.r.squared
+herb_summ_done<- tidy(herbivore_model) %>%
+  mutate(
+    across(where(is.numeric), ~ formatC(.x, digits = 2, format = "e"))
+  ) %>%
   kable(caption = "Table 1. Herbivore Model Summary") %>%
-  kable_styling(bootstrap_options = "striped", full_width = FALSE)
-save_kable(herb_model_summ, file = "herb_model_summ.html")
+  kable_styling(bootstrap_options = "striped", full_width = FALSE) %>%
+  footnote(general = paste("Adjusted R-squared:", 
+                           round(glance(herbivore_model)$adj.r.squared, 3)))
+save_kable(herb_summ_done, file = "herb_summ_final.html")
 
 herb_anova<-tidy(herbivore_anova)%>%
+  mutate(
+    across(where(is.numeric), ~ formatC(.x, digits = 2, format = "e"))
+  ) %>%
   kable(caption = "Table 2. Herbivore ANOVA results") %>%
   kable_styling(bootstrap_options = "striped", full_width = FALSE)
 save_kable(herb_anova, file = "herb_anova.html")
