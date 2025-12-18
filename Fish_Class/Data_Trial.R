@@ -21,7 +21,7 @@ library(webshot2)
 
 #Import data
 Data_final<-read.csv(here("Fish_Class", "Data", "Fish_Data_Final.csv"))
-View(Data_final)
+#View(Data_final)
 
 #cut any spaces in species names
 all_data <- Data_final%>%
@@ -156,6 +156,7 @@ check_model(carnivore_model)
 
 summary(carnivore_model)
 carivore_anova<-car::Anova(carnivore_model, type=2)
+car::Anova(carnivore_model, type=2)
 
 
 #run emmeans
@@ -227,6 +228,7 @@ summary(herbivore_model)
 
 
 herbivore_anova<-car::Anova(herbivore_model, type=2)
+car::Anova(herbivore_model, type=2)
 
 ref.grid <- ref_grid(herbivore_model, at = list(Body_Size_cm =c(2.5, 7.5, 12.5, 17.5, 22.5, 27.5, 32.5)))
 emmip(ref.grid, ~Body_Size_cm)
@@ -244,6 +246,10 @@ ggplot()+
                 y = yvar))+
   scale_colour_manual(values = my_colors,
                       labels = c("Patchy_Reef" = "Patch Reef", "Reef_Flat"="Reef Flat"))+
+  labs(
+    x = "Body Size (Total Length cm)",
+    y = "Group Size"
+  )+
   labs(
     title= "Group Size Model Predictions Across Habitats for Herbivores",
     subtitle= "Group size and Body Size Model Predictions overlayed onto Raw Data for Herbivores"
@@ -294,10 +300,17 @@ ggplot()+
 
 ###This is me actually trying to export the model summaries
 
-carn_model_summ<-tidy(carnivore_model)%>%
-  kable(caption = "Table 3. Carnivore Model Summary") %>%
+sci_format <- function(x) formatC(x, digits = 2, format = "e")
+
+carn_summ<-modelsummary(carnivore_model,
+             fmt = fmt_scientific(digits = 2), # Formats p-values/stats
+             estimate = "{estimate}{stars}",    # Adds significance stars if wanted
+             statistic = "p.value",             # Shows p-values instead of Std. Error
+             gof_map = c("adj.r.squared", "nobs"),
+             output = "kableExtra",
+             caption = "Table 3. Carnivore Model Summary") %>%
   kable_styling(bootstrap_options = "striped", full_width = FALSE)
-save_kable(carn_model_summ, file = "carn_model_summ.html")
+save_kable(carn_summ, file = "carn_summ.html")
 
 carn_anova<-tidy(carnivore_anova) %>%
   kable(caption = "Table 4. Carnivore ANOVA results") %>%
