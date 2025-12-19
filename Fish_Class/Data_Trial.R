@@ -221,7 +221,7 @@ ggplot()+
   theme(
     text = element_text(family = "serif", size = 12))
 
-ggsave(here("Fish_Class", "Outputs", "Carnivore_Plot.png"))
+ggsave(here("Fish_Class", "Outputs", "Carnivore_Plot_Ribbons.png"))
 
 
 
@@ -250,9 +250,27 @@ model_df_herb <- emmip(ref.grid, ~ Body_Size_cm,
                   plotit = FALSE)
 
 
+#For ribbons
+herb_model_simple <- lm(Group_Size ~ Body_Size_cm, data = herbivore_data)
+model_df_simple <- data.frame(
+  Body_Size_cm = seq(min(herbivore_data$Body_Size_cm), 
+                     max(herbivore_data$Body_Size_cm), 
+                     length.out = 100))
+preds_herb <- predict(herb_model_simple, newdata = model_df_simple, se.fit = TRUE)
+model_df_simple$yvar <- preds_herb$fit
+model_df_simple$lwr  <- preds_herb$fit - (1.96 * preds_herb$se.fit)
+model_df_simple$upr  <- preds_herb$fit + (1.96 * preds_herb$se.fit)
+
 
 
 ggplot()+
+  geom_ribbon(data = model_df_simple,
+              aes(x = Body_Size_cm, 
+                  ymin = lwr, 
+                  ymax = upr 
+                  ), 
+              alpha = 0.2, 
+              show.legend = FALSE) +
   geom_point(data=herbivore_data,
              aes(x=Body_Size_cm,
                  y=Group_Size,
@@ -273,7 +291,7 @@ ggplot()+
   theme_bw()+
   theme(
     text = element_text(family = "serif", size = 12))
-ggsave(here("Fish_Class","Outputs", "Herbivore_Plot.png"))
+ggsave(here("Fish_Class","Outputs", "Herbivore_Plot_Ribbons.png"))
   
 
 
