@@ -18,7 +18,7 @@ library(knitr)
 library(broom)
 library(kableExtra)
 library(webshot2)
-library
+
 #Import data
 Data_final<-read.csv(here("Fish_Class", "Data", "Fish_Data_Final.csv"))
 #View(Data_final)
@@ -27,6 +27,7 @@ Data_final<-read.csv(here("Fish_Class", "Data", "Fish_Data_Final.csv"))
 all_data <- Data_final%>%
   mutate(
 Species = str_trim(Species, side = "both"))
+
 
 
 
@@ -40,7 +41,7 @@ all_data<-all_data%>%
   )
 )
 
-View(all_data)
+#View(all_data)
 
 #Random check
 
@@ -66,7 +67,7 @@ guild_counts <- clean_data%>%
   summarise(
     Count = n()
   )
-#View(guild_counts)
+View(guild_counts)
 
 #Look at how many ind in each Habitat we have
 habitat_counts<-clean_data%>%
@@ -100,7 +101,9 @@ car::Anova(fish_model, type = 2)
 em_hab <- emmeans(fish_model, ~ Habitat)
 em_trophic <- emmeans(fish_model, ~ Trophic_Guild)
 
+
 pairs(em_hab)
+
 
 
 #run some raw data checks
@@ -112,6 +115,7 @@ clean_data%>%
   ggplot(aes(x=Body_Size_cm, y= reorder(Group_Size, as.numeric(Group_Size)), color=Trophic_Guild))+
   facet_wrap(~Habitat)+
   geom_jitter()
+
 
 clean_data %>%
   group_by(Habitat) %>%
@@ -153,7 +157,7 @@ car::Anova(fish_model_poisson, type=2)
 carnivore_data<-clean_data%>%
   filter(Trophic_Guild=="Carnivore")
 
-View(carnivore_data)
+#View(carnivore_data)
 
 carnivore_model<-lm(Group_Size~Habitat+Body_Size_cm, data=carnivore_data)
 check_model(carnivore_model)
@@ -176,6 +180,7 @@ emmip(ref.grid, Habitat ~ Body_Size_cm)
 
 model_df_carn <- emmip(ref.grid, Habitat ~ Body_Size_cm,
       plotit = FALSE)
+
 
 # make a plot that has model predictions and our raw data
 
@@ -213,6 +218,8 @@ ggplot()+
   )+
   scale_colour_manual(values = my_colors,
     labels = c("Patchy_Reef" = "Patch Reef", "Reef_Flat"="Reef Flat"))+
+  scale_fill_manual(values = my_colors,
+                    labels = c("Patchy_Reef" = "Patch Reef", "Reef_Flat" = "Reef Flat")) +
   labs(
     title= "Group Size Model Predictions Across Habitats for Carnivores",
     subtitle= "Group size and Body Size Model Predictions overlayed onto Raw Data for Carnivores"
@@ -221,7 +228,7 @@ ggplot()+
   theme(
     text = element_text(family = "serif", size = 12))
 
-ggsave(here("Fish_Class", "Outputs", "Carnivore_Plot_Ribbons.png"))
+ggsave(here("Fish_Class", "Outputs", "Carnivore_Plot_Ribbons_Final.png"))
 
 
 
@@ -260,6 +267,7 @@ preds_herb <- predict(herb_model_simple, newdata = model_df_simple, se.fit = TRU
 model_df_simple$yvar <- preds_herb$fit
 model_df_simple$lwr  <- preds_herb$fit - (1.96 * preds_herb$se.fit)
 model_df_simple$upr  <- preds_herb$fit + (1.96 * preds_herb$se.fit)
+
 
 
 
@@ -425,7 +433,7 @@ herb_anova<-tidy(herbivore_anova)%>%
   kable_styling(bootstrap_options = "striped", full_width = FALSE)
 save_kable(herb_anova, file = "herb_anova.html")
 
-
+#new line of test code for Andy's class- ignore
 
 
 
