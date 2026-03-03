@@ -51,7 +51,7 @@ Updated SOP for [tile construction and deployment](https://docs.google.com/docum
 
 **March 7**
 
-*Tide= -0.1ft from 9:28 to 10:09 am (low at 9:48 am)* 
+*Tide= 0.1ft from 9:28 to 10:09 am (low at 10:20 am)* 
 
 Would want to arrive about 9:00 (parking situation TBD), on sand by 9:15, work until 10:15-10:30 and be back by 12. 
 
@@ -61,7 +61,7 @@ Would want to arrive about 9:00 (parking situation TBD), on sand by 9:15, work u
   
   - Swell: 2 ft at 11 s from NW
   
-  - Wave Energy: 130kJ at 10:00
+  - Wave Energy: 212 kJ at 10:00
 
 - Wind: 12 mph E; gusts of 28
 
@@ -69,7 +69,7 @@ Would want to arrive about 9:00 (parking situation TBD), on sand by 9:15, work u
 
 **March 8** 
 
-*Tide= 0.0ft from 9:27 to 11:20 am (low at 10:09 am)* 
+*Tide= 0.2ft from 9:27 to 11:20 am (low at 10:44 am)* 
 
 Would want to arrive about 9:15 (parking situation TBD), on sand by 9:30, work until 10:30-10:45 and be back by 12:30.
 
@@ -79,7 +79,7 @@ Would want to arrive about 9:15 (parking situation TBD), on sand by 9:30, work u
   
   - Swell: 1.4 ft at 11s from NW
   
-  - Wave Energy: 25 kJ at 10:00
+  - Wave Energy: 226 kJ at 10:00
 
 
 - Wind: 5 mph E; gusts of 14
