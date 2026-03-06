@@ -15,6 +15,11 @@ editor:
 **This is Madigan's Lab Notebook. It was started in February 2026 to
 function as a log of work done, a to-do list, and a general place to
 workshop project ideas**
+# Year 1
+
+## Weekly summary/to do list/thoughts
+**3/2-3/6**
+This week sucked personally. I did not get a lot done for myself at all. However, we got the green light to go to Ka'upulehu for the community meeting on 3/11 and I had a tile prototype 3D printed at the PACE Makerspace. Minimal updates were made to SOP's and Protocols, mostly just got the necessities done this week though. 
 
 ## Writing
 
@@ -34,6 +39,10 @@ Questions:
 - Figure out how turf is named/defined and add in to metadata
 
 - Better column title than *Organism*? 
+
+**3/6**
+Didn't do a lot of work this week- but added a tab to the photoquad analysis sheet for mobile orgs and count data to keep separate and reduce NA's in my final data set by separating from algae %cover etc. Also found definitions for turf, put in metadata and put citations on protocol doc. 
+
 
 ### SOP for Tile Building and deployment
 
