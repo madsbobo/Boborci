@@ -15,14 +15,35 @@ editor:
 **This is Madigan's Lab Notebook. It was started in February 2026 to
 function as a log of work done, a to-do list, and a general place to
 workshop project ideas**
+
 # Year 1
 
 ## Weekly summary/to do list/thoughts
 **3/2-3/6**
 This week sucked personally. I did not get a lot done for myself at all. However, we got the green light to go to Ka'upulehu for the community meeting on 3/11 and I had a tile prototype 3D printed at the PACE Makerspace. Minimal updates were made to SOP's and Protocols, mostly just got the necessities done this week though. 
 
+
+
+
+## Meetings
+
+[One on One's with Jamie](https://docs.google.com/document/d/12ytNMCWecb1Dq2ZZPArwK2R8OimJ_7zB5DGfRN-8ZUg/edit?tab=t.0)
+
+## Reading Logs/Notes 
+
+- [Celia Lit Review](https://docs.google.com/spreadsheets/d/1R4GAAFEjg1LdSK-zgPWDC2mXJ2kZTGOv8NrAQtC6U_0/edit?gid=0#gid=0)
+
+- [Rocky Intertidal Reading Notes](https://docs.google.com/spreadsheets/d/1msT-RtpQmMFPojSIdImeVUphKP-B--Rip673tEBEjiA/edit?gid=0#gid=0)
+
+*more notes in Zotero as annotations as well*
+
 ## Writing
 
+To Do:
+
+- Outline for Intertidal Proj 
+
+- Introduction for Intertidal Proj
 
 ## Protocols
 
@@ -43,6 +64,9 @@ Questions:
 **3/6**
 Didn't do a lot of work this week- but added a tab to the photoquad analysis sheet for mobile orgs and count data to keep separate and reduce NA's in my final data set by separating from algae %cover etc. Also found definitions for turf, put in metadata and put citations on protocol doc. 
 
+
+**3/10** 
+Added some species ID photos to the metadata tab on the sheet 
 
 ### SOP for Tile Building and deployment
 
@@ -131,14 +155,23 @@ on 2/23/26. They are also being uploaded to the lab desktop and are on Koa Cloud
 
 
 
+## Ka‘ūpūlehu Community Meeting Notes/Overview 
+**3/11**
+
+Fly out to Kona at 6:30 am with Jamie and Kanoe. 
+
 
 
 ## Committee Formation
 Potential:
 Jamie (obviously)
+
 Nyssa
+
 Jacob? 
+
 ??
-UR: "arm's length" not actually defined anywhere I have been able to find
+
+UR: [Requirements](https://docs.google.com/document/d/10IhSs-RT1QU3pZNTT_-8epBK6Fu6FLYo7520ppnLoag/edit?tab=t.0)
 
 [Women and Gender Studies Dept](https://manoa.hawaii.edu/graduate/select-committee-member/#)
