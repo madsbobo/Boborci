@@ -19,21 +19,25 @@ workshop project ideas**
 # Year 1
 
 ## Weekly summary/to do list/thoughts
-**3/2-3/6**
-This week sucked personally. I did not get a lot done for myself at all. However, we got the green light to go to Ka'upulehu for the community meeting on 3/11 and I had a tile prototype 3D printed at the PACE Makerspace. Minimal updates were made to SOP's and Protocols, mostly just got the necessities done this week though. 
 
-
-
+**3/2-3/6** This week sucked personally. I did not get a lot done for
+myself at all. However, we got the green light to go to Ka'upulehu for
+the community meeting on 3/11 and I had a tile prototype 3D printed at
+the PACE Makerspace. Minimal updates were made to SOP's and Protocols,
+mostly just got the necessities done this week though.
 
 ## Meetings
 
-[One on One's with Jamie](https://docs.google.com/document/d/12ytNMCWecb1Dq2ZZPArwK2R8OimJ_7zB5DGfRN-8ZUg/edit?tab=t.0)
+[One on One's with
+Jamie](https://docs.google.com/document/d/12ytNMCWecb1Dq2ZZPArwK2R8OimJ_7zB5DGfRN-8ZUg/edit?tab=t.0)
 
-## Reading Logs/Notes 
+## Reading Logs/Notes
 
-- [Celia Lit Review](https://docs.google.com/spreadsheets/d/1R4GAAFEjg1LdSK-zgPWDC2mXJ2kZTGOv8NrAQtC6U_0/edit?gid=0#gid=0)
+-   [Celia Lit
+    Review](https://docs.google.com/spreadsheets/d/1R4GAAFEjg1LdSK-zgPWDC2mXJ2kZTGOv8NrAQtC6U_0/edit?gid=0#gid=0)
 
-- [Rocky Intertidal Reading Notes](https://docs.google.com/spreadsheets/d/1msT-RtpQmMFPojSIdImeVUphKP-B--Rip673tEBEjiA/edit?gid=0#gid=0)
+-   [Rocky Intertidal Reading
+    Notes](https://docs.google.com/spreadsheets/d/1msT-RtpQmMFPojSIdImeVUphKP-B--Rip673tEBEjiA/edit?gid=0#gid=0)
 
 *more notes in Zotero as annotations as well*
 
@@ -41,9 +45,9 @@ This week sucked personally. I did not get a lot done for myself at all. However
 
 To Do:
 
-- Outline for Intertidal Proj 
+-   Outline for Intertidal Proj
 
-- Introduction for Intertidal Proj
+-   Introduction for Intertidal Proj
 
 ## Protocols
 
@@ -51,32 +55,41 @@ To Do:
 
 **2/27/26**
 
-Organized Turtle Bay photos by transect, started a [protocol](https://docs.google.com/document/d/1c0KI1wFTUMlBs6lImA5FDiBzJkXb2XVAH_c-jTt_gjo/edit?tab=t.0) for analyzing, made a [spreadsheet](https://docs.google.com/spreadsheets/d/1BXvRIjhm194BZ9sG7ba74MQEpcc-C0k6x_2KYsK4k4E/edit?gid=0#gid=0) with metadata tab for data entry. 
+Organized Turtle Bay photos by transect, started a
+[protocol](https://docs.google.com/document/d/1c0KI1wFTUMlBs6lImA5FDiBzJkXb2XVAH_c-jTt_gjo/edit?tab=t.0)
+for analyzing, made a
+[spreadsheet](https://docs.google.com/spreadsheets/d/1BXvRIjhm194BZ9sG7ba74MQEpcc-C0k6x_2KYsK4k4E/edit?gid=0#gid=0)
+with metadata tab for data entry.
 
 Questions:
 
-- Invertebrates- same spreadsheet? Count or stick with %?
+-   Invertebrates- same spreadsheet? Count or stick with %?
 
-- Figure out how turf is named/defined and add in to metadata
+-   Figure out how turf is named/defined and add in to metadata
 
-- Better column title than *Organism*? 
+-   Better column title than *Organism*?
 
-**3/6**
-Didn't do a lot of work this week- but added a tab to the photoquad analysis sheet for mobile orgs and count data to keep separate and reduce NA's in my final data set by separating from algae %cover etc. Also found definitions for turf, put in metadata and put citations on protocol doc. 
+**3/6** Didn't do a lot of work this week- but added a tab to the
+photoquad analysis sheet for mobile orgs and count data to keep separate
+and reduce NA's in my final data set by separating from algae %cover
+etc. Also found definitions for turf, put in metadata and put citations
+on protocol doc.
 
-
-**3/10** 
-Added some species ID photos to the metadata tab on the sheet 
+**3/10** Added some species ID photos to the metadata tab on the sheet
 
 ### SOP for Tile Building and deployment
 
 **2/27/26**
 
-Updated SOP for [tile construction and deployment](https://docs.google.com/document/d/1DW0WNnjXcA0YuDPmdLnvpjQF-oLIWXvy39ayp5bGDKE/edit?tab=t.0) with some things we had discussed (how to affix hobo, tagging methods, etc) 
+Updated SOP for [tile construction and
+deployment](https://docs.google.com/document/d/1DW0WNnjXcA0YuDPmdLnvpjQF-oLIWXvy39ayp5bGDKE/edit?tab=t.0)
+with some things we had discussed (how to affix hobo, tagging methods,
+etc)
 
-## Planning 
+## Planning
 
-***For site scouting/fieldwork, Micah suggested looking for low tide but also wave energy <100 kJ***
+***For site scouting/fieldwork, Micah suggested looking for low tide but
+also wave energy \<100 kJ***
 
 ### Laniakea Site Scouting:
 
@@ -84,40 +97,118 @@ Updated SOP for [tile construction and deployment](https://docs.google.com/docum
 
 **March 7**
 
-*Tide= 0.1ft from 9:28 to 10:09 am (low at 10:20 am)* 
+*Tide= 0.1ft from 9:28 to 10:09 am (low at 10:20 am)*
 
-Would want to arrive about 9:00 (parking situation TBD), on sand by 9:15, work until 10:15-10:30 and be back by 12. 
+Would want to arrive about 9:00 (parking situation TBD), on sand by
+9:15, work until 10:15-10:30 and be back by 12.
 
-- Swell/Waves:
+-   Swell/Waves:
 
-  - Surf Height: 2-3 ft
-  
-  - Swell: 2 ft at 11 s from NW
-  
-  - Wave Energy: 212 kJ at 10:00
+    -   Surf Height: 2-3 ft
 
-- Wind: 12 mph E; gusts of 28
+    -   Swell: 2 ft at 11 s from NW
 
-- Weather: Partly cloudy
+    -   Wave Energy: 212 kJ at 10:00
 
-**March 8** 
+-   Wind: 12 mph E; gusts of 28
 
-*Tide= 0.2ft from 9:27 to 11:20 am (low at 10:44 am)* 
+-   Weather: Partly cloudy
 
-Would want to arrive about 9:15 (parking situation TBD), on sand by 9:30, work until 10:30-10:45 and be back by 12:30.
+**March 8**
 
-- Swell/Waves:
+*Tide= 0.2ft from 9:27 to 11:20 am (low at 10:44 am)*
 
-  - Surf Height: 2-3 ft
-  
-  - Swell: 1.4 ft at 11s from NW
-  
-  - Wave Energy: 226 kJ at 10:00
+Would want to arrive about 9:15 (parking situation TBD), on sand by
+9:30, work until 10:30-10:45 and be back by 12:30.
 
+-   Swell/Waves:
 
-- Wind: 5 mph E; gusts of 14
+    -   Surf Height: 2-3 ft
 
-- Weather: Rain in the afternoon
+    -   Swell: 1.4 ft at 11s from NW
+
+    -   Wave Energy: 226 kJ at 10:00
+
+-   Wind: 5 mph E; gusts of 14
+
+-   Weather: Rain in the afternoon
+
+### Project Planning 3/12 (Post Kalaemano Meeting)
+
+Need to read papers and see if there's any information on life
+history/settlement/ growth time for algae here. Is three months enough?
+Or absolutely need more than that?
+
+**New Summer Plan**
+
+Instead of deploying at all sites, use Turtle Bay as a Pilot
+
+-   n=60 max
+
+<!-- -->
+
+-   do n=10 for each tile treatment (black and white)
+
+    -   leave out June-Oct
+
+    -   take temps with temp gun and photos every two weeks for 5 mos
+
+    -   Don't soak, prove that we can get algae on the putty and without
+        soaking so they're comparable to Kordas
+
+-   Copper cross
+
+    -   3 copper treatments x 2 heat treatments= 6
+
+    -   maybe do 5 replicates?
+
+    -   do we need to cross them with heat or do we just want to see if
+        the tape works
+
+        -   In that case maybe do 10 reps if we want and then just do
+            the 3 copper treatments with white plates 
+
+-   Settlement size comparison?
+
+    -   on the n=20? or separate so we can see the results from the ones
+        that follow Kordas with solid sample size
+
+    -   If separate, use the last 10 tiles for this, and do n=5 for a 9
+        and 11 cm settlement area? Or something similar. Can compare to
+        the 10 that are Kordas sized
+
+        -   Or just do n=10 for a 9 cm and compare to the n=10 for the 7
+            cm
+
+-   Cage some?
+
+    -   This could also be done later
+
+    -   I just want to see if it's possible to cage out fish
+
+-   conduct field surveys for observational data (north shore sites
+    only?) 
+
+-   measure tidal heights and put a lag bolt at each site so we know
+    where the different tidal heights are
+
+### Madigan's side projects
+
+-   Work with any limu data Kanoe already collects during her surveys
+
+    -   See if there are differences in algae comp between open and
+        closed take areas
+
+    -   See if there are differences within closed and open areas
+        (comapring a's and b's to their counterparts)
+
+    -   Pair with ‘opihi density area to see how the harvest changes the
+        limu communities
+
+-   Totally different: putting cages on Mark's 3d printed things
+
+    -   maybe Natalie does coral settlement and I can do algae comp or
+        fish vids/follows
 
 ## Field Work
 
@@ -129,10 +220,10 @@ Would want to arrive about 9:15 (parking situation TBD), on sand by 9:30, work u
 
 *0.0 tide at 11:34 am*
 
-Excursion to Turtle Bay! We got to the Ritz \~10:30, and were
-down on the sand \~10:45. The tide wasn't as low as I expected. Celia,
-Natalie and I began by identifying the GPS coordinate we had, and then
-took some [site
+Excursion to Turtle Bay! We got to the Ritz \~10:30, and were down on
+the sand \~10:45. The tide wasn't as low as I expected. Celia, Natalie
+and I began by identifying the GPS coordinate we had, and then took some
+[site
 photos](https://drive.google.com/drive/u/0/folders/1OQXG37OfbQFIea8StpXGFpf8WnhEXl1x).
 Tide was difficult to work with. We ended up setting out 8 vertical
 transects between 4 and 9 ish meters long to capture zonation across the
@@ -151,27 +242,96 @@ impossible. I uploaded all photos to my shared [Madigan Boborci
 Drive](https://drive.google.com/drive/u/0/folders/0AEZZCGkxNF-uUk9PVA)
 in a [Field Work Photos
 Folder](https://drive.google.com/drive/u/0/folders/1-3IOwiSWHNMWt95N0L__JsfJaXnj5VEW)
-on 2/23/26. They are also being uploaded to the lab desktop and are on Koa Cloud since we don't currently have hard drives.
+on 2/23/26. They are also being uploaded to the lab desktop and are on
+Koa Cloud since we don't currently have hard drives.
 
+## Ka‘ūpūlehu Community Meeting Notes/Overview
 
-
-## Ka‘ūpūlehu Community Meeting Notes/Overview 
 **3/11**
 
-Fly out to Kona at 6:30 am with Jamie and Kanoe. 
+Flew out to Kona at 6:30 am with all the CoI's! Landed, went to a market
+for snacks, Kanoe gave the lowdown on the community and some of the
+other current affairs they're dealing with. We went to the Kalaemano
+Interpretive Center, got there and then we did a circle on the grass
+where we introduced ourselves briefly and shared kilo (intentional
+observations) and then the Mo'olelo portion of the metting was a
+fisheries activity led by Madison. Then we presented first:
 
+-   Frame project with Mo'olelo about the intertidal going forward
 
+-   Add in some sort of signage?
+
+    -   A QR Code
+
+    -   Kari said she would put it on their social media
+
+    -   Madison said they could also put it in the resort, and
+        incorporate more signage there and bring it into their outreach
+
+    -   should have project overview, contact info, Jamie Website,
+        Kalaemano website
+
+-   Biofilms?
+
+-   Soak Tiles..?
+
+    -   Terracotta/ceramic instead of putty settlement area?
+
+        -   Easier to soak, could make removable settlement area for
+            Nyssa
+
+    -   Jamie doesn't want to- doesn't compare to Kordas
+
+        -   see Planning section for what to do instead
+
+-   Timeline
+
+    -   Funding
+
+    -   Permits- all received now
+
+    -   Nyssa equipment
+
+    -   Tile Soaking?
+
+    -   Try Wait opening potentially July 1
+
+        -   Where is best to put the tiles? In closed or open area?
+
+        -   Block them? (Please no I can't do the stats for that)
+
+        -   Put them in areas where the security cams work and work with
+            security to add some help protecting them
+
+After presenting, we listened to the Ch91 fishing plan updates, and then
+had a delicious lunch. Afterwards, we changed and did a shoreline walk,
+got to see the area and the issues we may have. The tide was a 0.2 at
+2:30, but the wave energy was pretty close to unworkable at only 120 kJ.
+We chatted a lot about logistics/other project and side project ideas,
+including how we would need an AirBnb practically on the water to do
+ecosystem function processing there. Concerns include the settlement
+area size, material, whether to soaks, timeline of tile deploy,
+questioning whether they can be surveyed every two weeks, and if they
+need to be left out for longer than three months.
+
+After the shoreline walk, we hung out a bit, said goodbye, and headed to
+the airport. An amazing day overall and good connections were built and
+solid questions were raised.
+
+See Planning section for thoughts on addressing concerns above.
 
 ## Committee Formation
-Potential:
-Jamie (obviously)
+
+Potential: Jamie (obviously)
 
 Nyssa
 
-Jacob? 
+Jacob?
 
 ??
 
-UR: [Requirements](https://docs.google.com/document/d/10IhSs-RT1QU3pZNTT_-8epBK6Fu6FLYo7520ppnLoag/edit?tab=t.0)
+UR:
+[Requirements](https://docs.google.com/document/d/10IhSs-RT1QU3pZNTT_-8epBK6Fu6FLYo7520ppnLoag/edit?tab=t.0)
 
-[Women and Gender Studies Dept](https://manoa.hawaii.edu/graduate/select-committee-member/#)
+[Women and Gender Studies
+Dept](https://manoa.hawaii.edu/graduate/select-committee-member/#)
