@@ -26,6 +26,18 @@ the community meeting on 3/11 and I had a tile prototype 3D printed at
 the PACE Makerspace. Minimal updates were made to SOP's and Protocols,
 mostly just got the necessities done this week though.
 
+**3/9-3/13** This week I printed off some handouts for the Big Island
+meeting, and we went to Kona on Wed 3/11. Notes are below. Got a bunch
+of ideas for side projects and edits for this project, all detailed in
+planning or meetings. Reached out to Kanoe about one, setting up meeting
+after spring break
+
+**3/16-3/20** Spring break, graded one day that's about it
+
+**3/23-3/27** Started this week thinking some more about the project,
+did some additional reading, really need to just start writing some
+stuff. Also need to start more photoquad analysis.
+
 ## Meetings
 
 [One on One's with
@@ -144,8 +156,6 @@ Or absolutely need more than that?
 Instead of deploying at all sites, use Turtle Bay as a Pilot
 
 -   n=60 max
-
-<!-- -->
 
 -   do n=10 for each tile treatment (black and white)
 
