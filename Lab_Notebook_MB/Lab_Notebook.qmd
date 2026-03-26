@@ -190,6 +190,8 @@ Instead of deploying at all sites, use Turtle Bay as a Pilot
         -   Or just do n=10 for a 9 cm and compare to the n=10 for the 7
             cm
 
+-If can't leave out for 6 mos, do n=10 at a lower tidal height to mimic soaking over the three months 
+
 -   Cage some?
 
     -   This could also be done later
