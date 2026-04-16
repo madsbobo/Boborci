@@ -1,0 +1,165 @@
+---
+title: "Hypothesis Figures"
+author: "Madigan"
+format: html
+---
+```{r}
+library(ggplot2)
+```
+
+```{r}
+#|code-fold: true
+df <- data.frame(
+  x = c(1, 3),           
+  y = c(3, 1),           
+  treatment = c("ambient", "warm")
+)
+
+```
+
+
+
+```{r}
+#|code-fold: true
+base_plot<-ggplot(df, aes(x,y,color=treatment))+
+  geom_point(size=8)+
+  scale_color_manual(values = c("ambient" = "skyblue", "warm" = "salmon"))+
+    scale_x_continuous(
+      limits = c(0, 4), 
+      breaks = c(1, 3), 
+      labels = c("ambient", "warm")
+  )+
+  ylim(0,4)+
+  theme_classic()+
+  labs(x = NULL)+ 
+  theme(
+    legend.position = "none",
+    axis.text.y = element_blank(),
+    axis.title.y = element_text(size = 14),
+    axis.text.x = element_text(size = 14, color = "black"))
+
+```
+
+```{r}
+#|code-fold: true
+base_plot+
+labs(y="Algae Biomass") 
+
+
+
+```
+
+```{r}
+#|code-fold: true
+base_plot+
+  labs(y="Diversity") 
+```
+
+Limestone/Basalt
+```{r}
+#|code-fold: true
+df2 <- data.frame(
+  x = c(0.5, 3,5.5,7.5),           
+  y = c(3, 1, 2,0.5),           
+  treatment = c("ambient", "warm"))
+
+ggplot(df2, aes(x,y, color=treatment))+
+  geom_point(size=8)+
+  scale_color_manual(values = c("ambient" = "skyblue", "warm" = "salmon"))+
+    scale_x_continuous(
+      limits = c(0, 8), 
+      breaks = c(1, 6), 
+      labels = c("limestone", "basalt")
+  )+
+  ylim(0,4)+
+  theme_classic()+
+  labs(x = NULL,
+       y = "Algae Biomass")+ 
+  theme(
+    legend.position = "none",
+    axis.text.y = element_blank(),
+    axis.title.y = element_text(size = 14),
+    axis.text.x = element_text(size = 14, color = "black"))
+```
+
+Wave Exposure
+```{r}
+#|code-fold: true
+df2 <- data.frame(
+  x = c(0.5,1,2.5,3),           
+  y = c(.5,.5,3.5,3.5),           
+  treatment = c("ambient", "warm"))
+
+ggplot(df2, aes(x,y, color=treatment))+
+  geom_line(linewidth = 2)+
+  scale_color_manual(values = c("ambient" = "skyblue", "warm" = "salmon"))+
+  ylim(0,4)+
+  theme_classic()+
+  labs(x = "wave exposure",
+       y = "Algae Biomass")+ 
+  theme(
+    legend.position = "none",
+    axis.text.y = element_blank(),
+    axis.text.x = element_blank(),
+    axis.title.y = element_text(size = 14),
+    axis.title.x=element_text(size=14))
+```
+
+
+
+
+Herbivore Abundance 
+```{r}
+#|code-fold: true
+df2 <- data.frame(
+  x = c(0.5,1,2.5,3),           
+  y = c(3.5,3.5,.5,.5),           
+  treatment = c("ambient", "warm"))
+
+ggplot(df2, aes(x,y, color=treatment))+
+  geom_line(linewidth = 2)+
+  scale_color_manual(values = c("ambient" = "skyblue", "warm" = "salmon"))+
+  ylim(0,4)+
+  theme_classic()+
+  labs(x = "herbivore abundance",
+       y = "Algae Biomass")+ 
+  theme(
+    legend.position = "none",
+    axis.text.y = element_blank(),
+    axis.text.x = element_blank(),
+    axis.title.y = element_text(size = 14),
+    axis.title.x=element_text(size=14))
+```
+
+
+
+
+
+
+Herbivore Treatment Plot
+```{r}
+#|code-fold: true
+herb_plot<-ggplot(df, aes(x,y))+
+  geom_point(size=8)+
+    scale_x_continuous(
+      limits = c(0, 4), 
+      breaks = c(1, 3), 
+      labels = c("- herbivores", "+ herbivores")
+  )+
+  ylim(0,4)+
+  theme_classic()+
+  labs(x = NULL,
+       y = "Effect Size of Warming")+ 
+  theme(
+    legend.position = "none",
+    axis.text.y = element_blank(),
+    axis.title.y = element_text(size = 14),
+    axis.text.x = element_text(size = 14, color = "black"))
+herb_plot
+```
+
+
+
+
+
+
