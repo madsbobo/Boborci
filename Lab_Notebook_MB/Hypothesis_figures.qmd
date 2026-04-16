@@ -5,6 +5,7 @@ format: html
 ---
 ```{r}
 library(ggplot2)
+library(here)
 ```
 
 ```{r}
@@ -45,7 +46,8 @@ base_plot<-ggplot(df, aes(x,y,color=treatment))+
 base_plot+
 labs(y="Algae Biomass") 
 
-
+ggsave(here( "H1_biomass.png"),
+       width=4, height=4)
 
 ```
 
@@ -53,6 +55,9 @@ labs(y="Algae Biomass")
 #|code-fold: true
 base_plot+
   labs(y="Diversity") 
+ggsave(here( "H1_diversity.png"),
+       width=4, height=4)
+
 ```
 
 Limestone/Basalt
@@ -80,6 +85,9 @@ ggplot(df2, aes(x,y, color=treatment))+
     axis.text.y = element_blank(),
     axis.title.y = element_text(size = 14),
     axis.text.x = element_text(size = 14, color = "black"))
+ggsave(here( "H1_substrate.png"),
+       width=4, height=4)
+
 ```
 
 Wave Exposure
@@ -103,6 +111,9 @@ ggplot(df2, aes(x,y, color=treatment))+
     axis.text.x = element_blank(),
     axis.title.y = element_text(size = 14),
     axis.title.x=element_text(size=14))
+ggsave(here( "H1_waves.png"),
+       width=4, height=4)
+
 ```
 
 
@@ -129,6 +140,9 @@ ggplot(df2, aes(x,y, color=treatment))+
     axis.text.x = element_blank(),
     axis.title.y = element_text(size = 14),
     axis.title.x=element_text(size=14))
+ggsave(here( "H1_herbs.png"),
+       width=4, height=4)
+
 ```
 
 
@@ -156,6 +170,9 @@ herb_plot<-ggplot(df, aes(x,y))+
     axis.title.y = element_text(size = 14),
     axis.text.x = element_text(size = 14, color = "black"))
 herb_plot
+ggsave(here( "H2_effectsize.png"),
+       width=4, height=4)
+
 ```
 
 
