@@ -23,7 +23,7 @@ df <- data.frame(
 ```{r}
 #|code-fold: true
 base_plot<-ggplot(df, aes(x,y,color=treatment))+
-  geom_point(size=8)+
+  geom_point(size=12)+
   scale_color_manual(values = c("ambient" = "skyblue", "warm" = "salmon"))+
     scale_x_continuous(
       limits = c(0, 4), 
@@ -69,7 +69,7 @@ df2 <- data.frame(
   treatment = c("ambient", "warm"))
 
 ggplot(df2, aes(x,y, color=treatment))+
-  geom_point(size=8)+
+  geom_point(size=12)+
   scale_color_manual(values = c("ambient" = "skyblue", "warm" = "salmon"))+
     scale_x_continuous(
       limits = c(0, 8), 
@@ -154,7 +154,7 @@ Herbivore Treatment Plot
 ```{r}
 #|code-fold: true
 herb_plot<-ggplot(df, aes(x,y))+
-  geom_point(size=8)+
+  geom_point(size=12)+
     scale_x_continuous(
       limits = c(0, 4), 
       breaks = c(1, 3), 
