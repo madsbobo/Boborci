@@ -95,7 +95,8 @@ Tuesday came in to the office for a few hours and did some updating and lab clea
 
 6/23 I went to Waikiki MLCD with Natalie, Elle, and Wei Shen to try out some SFM and shore diving with the frames- it went bad. The waves were breaking and there were a lot of coral heads to navigate and then once we got out there the vis also sucked. I also crushed my phone in the van door, so I spent the afternoon at the Apple Store. Wed I recorded my virtual components for HCC and submitted them, and then I learned how to use Coral Net. I edited all my photoquads, and put them in coral net but then realized that it's better to use Image J to project a grid on top of the quads to analyze using visual estimation and a scale like from the Dethier and Sachowicz papers. Working on that today, 6/25. Going diving at Electric Beach tomorrow with Natalie and Elle to try and deploy again tomorrow. Also put in tentative dates for all my tile checks until the semester starts. Planning to site scout Ma'ili on Saturday am. Was going to go to Laniakea on Sunday, but they're closing the full highway so have to move that. Planning for Tile check 1 on June 30, still to be confirmed. Working on Protocols for Coral Net and FIJI
 
-
+**7/6-7/10**
+Tile Check 1 was good! One problem child tile so now we are going to bring tools in the field for each timepoint. The black tiles were 2 degrees hotter than the white tiles though! They had brown scuzz growing on them and the tiles with the lowest tidal height were definitely more gross than the ones higher up. Jamie and Shawn went and fixed all the problem children 7/2. Have been diving for Natalie. Got my O2 and other certs refreshed 7/3 so I can dive with DAR 7/7. Next tile timepoint will be 7/12. Writing FIJI protocol for photoquads as well. 
 
 
 
@@ -416,6 +417,10 @@ Went out to see the tiles!
 **6/27**
 
 Went to scout out Ma'ili. Some available bench area, only about 40 m of great space, one side has a lot of ridge-y areas and the other is a stream outlet. Different Algae community, but still patches of limu kala so I see us putting thew tiles at that tidal height to match TB. I got there at 7:00 am, tide was at -0.1 according to surfline, which is what it said the low was which was at 7:38. Wave energy was 138 kJ, which did make the transect hard with one person, but not impossible. Did a 40 m parallel to shore and 5 transects perpendicular to shore along that same area. Lots of photos, on Google and Koa and will be on Lab desktop. Man came up to me as I was leaving and asked me what I was doing, and his response seemed good!
+
+**6/30** 
+
+Went with Mica to my first tile Timepoint. Arrived at about 7:15, just before low tide (-0.3). All tiles were exposed. One tile (11A) had one full anchor and bolt out of the substrate. Otherwise, tiles were cleaned, photos and photoquads taken, and HOBOs checked. Black tiles were ~2 degress hotter than white! Jamie and Shawn fixed 11A, and another problem tile, and tightened all lags on all tiles. In the future, we will bring tools at each time point to do this. 
 
 ## Committee Formation
 
