@@ -1,0 +1,121 @@
+---
+title: "Tile Data"
+author: "Madigan Boborci"
+format: html
+---
+
+
+## Load Libraries
+
+```{r}
+library(readr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(here)
+```
+
+## Read in Data Files
+
+```{r}
+HOBO1<-read.csv("Data/22263995 2026-07-12 06_19_20 HST.csv")
+HOBO2<-read.csv("Data/22263996 2026-07-12 06_15_15 HST.csv")
+HOBO3<-read.csv("Data/22263998 2026-07-12 06_15_55 HST.csv")
+HOBO4<-read.csv("Data/22263999 2026-07-12 06_14_14 HST.csv")
+HOBO5<-read.csv("Data/22264000 2026-07-12 06_17_42 HST.csv")
+HOBO6<-read.csv("Data/22264001 2026-07-12 06_14_39 HST.csv")
+HOBO7<-read.csv("Data/22264004 2026-07-12 06_16_24 HST.csv")
+```
+
+## Add HOBO ID Numbers
+
+```{r}
+HOBO1<-mutate(HOBO1, HOBO_ID = "22263995")
+HOBO2<-mutate(HOBO2, HOBO_ID = "22263996")
+HOBO3<-mutate(HOBO3, HOBO_ID = "22263998")
+HOBO4<-mutate(HOBO4, HOBO_ID = "22263999")
+HOBO5<-mutate(HOBO5, HOBO_ID = "22264000")
+HOBO6<-mutate(HOBO6, HOBO_ID = "22264001")
+HOBO7<-mutate(HOBO7, HOBO_ID = "22264004")
+```
+
+
+## Use Bind Rows to combine Data
+
+```{r}
+HOBO_data_full<- bind_rows(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7)
+```
+
+
+## Clean Data: removing unecessary columns, renaming columns, adding treatments, fixing Date/Time
+
+```{r}
+HOBO_clean<- HOBO_data_full%>%
+  select(-`Host.Connected`, -`End.of.File`, -`Button.Down`,-`Button.Up`)%>%
+  rename(Temp_C=Temperature.....C., Date_Time_HST=Date.Time..HST.)%>%
+  mutate(
+    Treatment = case_when(
+      HOBO_ID %in% c("22264004", "22263998", "22263996") ~ "White",
+      HOBO_ID %in% c("22263995", "22263999", "22264000","22264001") ~ "Black",
+      TRUE                                              ~ "Unknown" 
+    ))%>%
+      separate(`Date_Time_HST`, into = c("Date", "Time"), sep = " ", remove = FALSE)
+  
+```
+
+
+
+## Plot Data
+
+```{r}
+ggplot(data=HOBO_clean, aes(x=Date, y=Temp_C, color=Treatment))+
+                            geom_line()+
+  ylim(22,28)
+```
+
+
+### Try to isolate Daily Data to see patterns
+
+```{r}
+HOBO_OneDay<-HOBO_clean %>%
+  filter(Date == "07/02/2026")
+```
+
+
+### Plot that Data
+
+```{r}
+ggplot(data=HOBO_OneDay, aes(x=Time, y=Temp_C, color=Treatment))+
+                            geom_line()+
+  ylim(22,35)
+```
+
+## Try to isolate a smaller date window to observe
+
+### Going Monthly
+
+```{r}
+HOBO_July<- HOBO_clean %>% 
+  filter(Date >= "07/01/2026" & Date <= "07/12/2026")
+```
+
+```{r}
+ggplot(data=HOBO_July, aes(x=Time, y=Temp_C, color=Treatment))+
+                            geom_line()+
+  ylim(22,35)
+```
+
+```{r}
+HOBO_June<- HOBO_clean %>% 
+  filter(Date >= "06/08/2026" & Date <= "06/30/2026")
+```
+
+```{r}
+ggplot(data=HOBO_June, aes(x=Time, y=Temp_C, color=Treatment))+
+                            geom_line()+
+  ylim(22,35)
+```
+
+
+
+
