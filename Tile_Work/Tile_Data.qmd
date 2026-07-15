@@ -5,7 +5,7 @@ format: html
 ---
 
 
-## Load Libraries
+### Load Libraries
 
 ```{r}
 library(readr)
@@ -15,7 +15,7 @@ library(ggplot2)
 library(here)
 ```
 
-## Read in Data Files
+### Read in Data Files
 
 ```{r}
 HOBO1<-read.csv("Data/22263995 2026-07-12 06_19_20 HST.csv")
@@ -27,7 +27,7 @@ HOBO6<-read.csv("Data/22264001 2026-07-12 06_14_39 HST.csv")
 HOBO7<-read.csv("Data/22264004 2026-07-12 06_16_24 HST.csv")
 ```
 
-## Add HOBO ID Numbers
+### Add HOBO ID Numbers
 
 ```{r}
 HOBO1<-mutate(HOBO1, HOBO_ID = "22263995")
@@ -40,14 +40,14 @@ HOBO7<-mutate(HOBO7, HOBO_ID = "22264004")
 ```
 
 
-## Use Bind Rows to combine Data
+#### Use Bind Rows to combine Data
 
 ```{r}
 HOBO_data_full<- bind_rows(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7)
 ```
 
 
-## Clean Data: removing unecessary columns, renaming columns, adding treatments, fixing Date/Time
+### Clean Data: removing unecessary columns, renaming columns, adding treatments, fixing Date/Time
 
 ```{r}
 HOBO_clean<- HOBO_data_full%>%
@@ -65,7 +65,7 @@ HOBO_clean<- HOBO_data_full%>%
 
 
 
-## Plot Data
+### Plot Data
 
 ```{r}
 ggplot(data=HOBO_clean, aes(x=Date, y=Temp_C, color=Treatment))+
@@ -74,7 +74,7 @@ ggplot(data=HOBO_clean, aes(x=Date, y=Temp_C, color=Treatment))+
 ```
 
 
-### Try to isolate Daily Data to see patterns
+#### Try to isolate Daily Data to see patterns
 
 ```{r}
 HOBO_OneDay<-HOBO_clean %>%
@@ -92,7 +92,7 @@ ggplot(data=HOBO_OneDay, aes(x=Time, y=Temp_C, color=Treatment))+
 
 ## Try to isolate a smaller date window to observe
 
-### Going Monthly
+#### Going Monthly
 
 ```{r}
 HOBO_July<- HOBO_clean %>% 
@@ -116,6 +116,19 @@ ggplot(data=HOBO_June, aes(x=Time, y=Temp_C, color=Treatment))+
   ylim(22,35)
 ```
 
+# Significant Results!
 
+```{r}
+t_result <- t.test(Temp_C ~ Treatment, data = HOBO_clean)
+
+t_result
+```
+
+
+#### Tide Notes for Winter sites- not concerned about tides not heating tiles enough
+By end of December, tides (Diamond Head) are in mid afternoon (1-3)
+Before that, there's a higher low in the am about 8 hrs before the low low, usually around the time the summer tides have been in the am, but only at about 0.2-0 as lowest values. Same ish with Sandy's and Ewa with afternoon lows right at 0 by mid-end of Dec. 
+
+Probably want to do tidal heights at the 0.1 end of the tile block spectrum that we have at TB
 
 
