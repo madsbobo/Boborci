@@ -127,6 +127,88 @@ t_result
 group by day, get max temp and average through the month ~Treatment 
 
 
+
+```{r}
+adm_ttest <- t.test(daily_max ~ Treatment, data = adm)
+```
+
+
+
+
+```{r}
+adm_July<-HOBO_July%>%
+  group_by(Date, Treatment) %>%
+  summarise(
+    daily_max = max(Temp_C, na.rm = TRUE), 
+    .groups = "drop"
+  ) %>%
+  group_by(Treatment) %>%
+  summarise(
+    avg_daily_max = mean(daily_max, na.rm = TRUE), 
+    .groups = "drop"
+  )
+  
+```
+
+
+```{r}
+adm_June_for_ttest <- HOBO_June %>%
+  group_by(Date, Treatment) %>%
+  summarise(
+    daily_max = max(Temp_C, na.rm = TRUE), 
+    .groups = "drop"
+  ) %>%
+  mutate(
+    daily_max = ifelse(is.infinite(daily_max), NA, daily_max)
+  )
+
+```
+```{r}
+t_test_June <- t.test(daily_max ~ Treatment, data = adm_June_for_ttest)
+```
+
+```{r}
+adm_June_for_ttest %>%
+  filter(!is.na(daily_max)) %>%
+  group_by(Treatment) %>%
+  summarise(sample_size = n())
+
+```
+
+
+
+### Starting Fresh
+```{r}
+daily_max<-HOBO_clean%>%
+  group_by(Date, Treatment, HOBO_ID) %>%
+  summarise(
+    daily_max = max(Temp_C, na.rm = TRUE), 
+    .groups = "drop"
+  ) %>%
+  mutate(
+    daily_max = ifelse(is.infinite(daily_max), NA, daily_max)
+  )
+```
+```{r}
+t_daily_max <- t.test(daily_max ~ Treatment, data = daily_max)
+```
+
+
+```{r}
+anova(lm(daily_max~Treatment, data=daily_max))
+```
+
+```{r}
+daily_max%>%
+  group_by(Treatment)%>%
+  summarise(
+    avg_daily_max = mean(daily_max, na.rm = TRUE), 
+    .groups = "drop"
+  )
+```
+
+
+
 #### Tide Notes for Winter sites- not concerned about tides not heating tiles enough
 
 By end of December, tides (Diamond Head) are in mid afternoon (1-3)
