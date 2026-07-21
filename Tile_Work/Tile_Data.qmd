@@ -13,6 +13,8 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(here)
+library(lme4)
+library(lmerTest) 
 ```
 
 ### Read in Data Files
@@ -205,6 +207,121 @@ daily_max%>%
     avg_daily_max = mean(daily_max, na.rm = TRUE), 
     .groups = "drop"
   )
+```
+```{r}
+ggplot(data=HOBO_clean, aes(x=Date_Time_HST, y=Temp_C, color=Treatment))+
+                            geom_line()
+```
+```{r}
+HOBO_clean <- HOBO_clean %>%
+  mutate(Date_Time_HST = mdy_hms(Date_Time_HST))
+```
+
+```{r}
+test <- HOBO_clean %>%
+  filter(
+    Date_Time_HST >= mdy_hms("07/01/2026 01:00:00"),
+    Date_Time_HST <= mdy_hms("07/04/2026 23:00:00")
+  )
+```
+
+```{r}
+ggplot(data = test, aes(x = Date_Time_HST, y = Temp_C, color = factor(HOBO_ID))) +
+  geom_point() +
+  geom_line()
+```
+
+### Do a max difference comparison 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+daily_max_df <- HOBO_clean %>%
+  filter(!is.na(Temp_C)) %>%
+  mutate(Date = as.Date(Date_Time_HST)) %>% 
+  group_by(Date, HOBO_ID, Treatment) %>%
+  summarise(
+    max_temp = max(Temp_C, na.rm = TRUE),
+    .groups = "drop"
+  )
+```
+
+
+
+```{r}
+max_model <- lmer(max_temp ~ Treatment + (1 | HOBO_ID), data = daily_max_df)
+summary(max_model)
+```
+
+```{r}
+max_t_test<-daily_max_df %>%
+  group_by(HOBO_ID, Treatment) %>%
+  summarise(mean_daily_max = mean(max_temp, na.rm = TRUE), .groups = "drop")
+
+t.test(mean_daily_max ~ Treatment, data = max_t_test)
+```
+
+```{r}
+treatment_daily_summary <- daily_max_df %>%
+  group_by(Date, Treatment) %>%
+  summarise(avg_max_temp = mean(max_temp, na.rm = TRUE), .groups = "drop") %>%
+  # Pivot treatments into columns to compute the difference
+  pivot_wider(names_from = Treatment, values_from = avg_max_temp) %>%
+  mutate(
+    # Absolute difference between black and white treatment averages
+    temp_diff = abs(Black - White),
+    # Signed difference (positive means Black was hotter, negative means White was hotter)
+    black_minus_white = Black - White
+  )
+```
+
+```{r}
+avg_offset <- mean(treatment_daily_summary$black_minus_white, na.rm = TRUE)
+avg_offset
+```
+
+
+```{r}
+# Step B: Find the day with the LARGEST temperature gap
+largest_gap <- treatment_daily_summary %>%
+  filter(!is.na(temp_diff)) %>%
+  slice_max(order_by = temp_diff, n = 1)
+
+# View the result
+print("Day with the largest temperature difference between treatments:")
+print(largest_gap)
+```
+
+```{r}
+ggplot(treatment_daily_summary, aes(x = Date, y = black_minus_white)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey50") +
+  geom_line(color = "darkred", size = 1) +
+  geom_point(data = largest_gap, aes(x = Date, y = black_minus_white), color = "red", size = 4) +
+  annotate(
+    "text", 
+    x = largest_gap$Date, 
+    y = largest_gap$black_minus_white, 
+    label = paste0(" Max Gap: ", round(largest_gap$temp_diff, 2), "°C"),
+    hjust = -0.1, vjust = -0.5, fontface = "bold"
+  ) +
+  labs(
+    title = "Daily Temperature Difference (Black Treatment - White Treatment)",
+    subtitle = "Positive values indicate Black treatment was hotter",
+    x = "Date",
+    y = "Temperature Difference (°C)"
+  ) +
+  theme_minimal()
 ```
 
 
