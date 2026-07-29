@@ -13,6 +13,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(here)
+library(lubridate)
 library(lme4)
 library(lmerTest) 
 ```
@@ -20,13 +21,13 @@ library(lmerTest)
 ### Read in Data Files
 
 ```{r}
-HOBO1<-read.csv("Data/22263995 2026-07-12 06_19_20 HST.csv")
+HOBO1<-read.csv("Data/22263995_20260728.csv")
 HOBO2<-read.csv("Data/22263996 2026-07-12 06_15_15 HST.csv")
-HOBO3<-read.csv("Data/22263998 2026-07-12 06_15_55 HST.csv")
-HOBO4<-read.csv("Data/22263999 2026-07-12 06_14_14 HST.csv")
-HOBO5<-read.csv("Data/22264000 2026-07-12 06_17_42 HST.csv")
-HOBO6<-read.csv("Data/22264001 2026-07-12 06_14_39 HST.csv")
-HOBO7<-read.csv("Data/22264004 2026-07-12 06_16_24 HST.csv")
+HOBO3<-read.csv("Data/22263998_20260728 .csv")
+HOBO4<-read.csv("Data/22263999_20260728 .csv")
+HOBO5<-read.csv("Data/22264000_20260728 .csv")
+HOBO6<-read.csv("Data/22264001_20260728.csv")
+HOBO7<-read.csv("Data/22264004_20260728.csv")
 ```
 
 ### Add HOBO ID Numbers
@@ -54,7 +55,9 @@ HOBO_data_full<- bind_rows(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7)
 ```{r}
 HOBO_clean<- HOBO_data_full%>%
   select(-`Host.Connected`, -`End.of.File`, -`Button.Down`,-`Button.Up`)%>%
-  rename(Temp_C=Temperature.....C., Date_Time_HST=Date.Time..HST.)%>%
+  mutate(Temp_C = coalesce(Temperature.....C., Temperature....C)) %>%
+  select(-Temperature.....C., -Temperature....C)%>%
+  rename(Date_Time_HST=Date.Time..HST.)%>%
   mutate(
     Treatment = case_when(
       HOBO_ID %in% c("22264004", "22263998", "22263996") ~ "White",
@@ -98,7 +101,7 @@ ggplot(data=HOBO_OneDay, aes(x=Time, y=Temp_C, color=Treatment))+
 
 ```{r}
 HOBO_July<- HOBO_clean %>% 
-  filter(Date >= "07/01/2026" & Date <= "07/12/2026")
+  filter(Date >= "07/01/2026" & Date <= "07/28/2026")
 ```
 
 ```{r}
@@ -130,9 +133,7 @@ group by day, get max temp and average through the month ~Treatment
 
 
 
-```{r}
 adm_ttest <- t.test(daily_max ~ Treatment, data = adm)
-```
 
 
 
