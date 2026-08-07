@@ -65,6 +65,8 @@ HOBO_clean<- HOBO_data_full%>%
       TRUE                                              ~ "Unknown" 
     ))%>%
       separate(`Date_Time_HST`, into = c("Date", "Time"), sep = " ", remove = FALSE)
+
+write_csv(HOBO_clean, "MFB_HOBO_Clean.csv")
   
 ```
 
