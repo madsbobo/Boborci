@@ -21,13 +21,14 @@ library(lmerTest)
 ### Read in Data Files
 
 ```{r}
-HOBO1<-read.csv("Data/22263995_20260728.csv")
-HOBO2<-read.csv("Data/22263996 2026-07-12 06_15_15 HST.csv")
-HOBO3<-read.csv("Data/22263998_20260728 .csv")
-HOBO4<-read.csv("Data/22263999_20260728 .csv")
-HOBO5<-read.csv("Data/22264000_20260728 .csv")
-HOBO6<-read.csv("Data/22264001_20260728.csv")
-HOBO7<-read.csv("Data/22264004_20260728.csv")
+HOBO1<-read.csv("Data/22263995_08_12.csv")
+HOBO2<-read.csv("Data/22263996_08_12.csv")
+HOBO3<-read.csv("Data/22263998_08_12.csv")
+HOBO4<-read.csv("Data/22263999_08_12.csv")
+HOBO5<-read.csv("Data/22264000_08_12.csv")
+HOBO6<-read.csv("Data/22264001_08_12.csv")
+HOBO7<-read.csv("Data/22264004_08_12.csv")
+HOBO8<-read.csv("Data/22264003_08_12.csv")
 ```
 
 ### Add HOBO ID Numbers
@@ -40,13 +41,14 @@ HOBO4<-mutate(HOBO4, HOBO_ID = "22263999")
 HOBO5<-mutate(HOBO5, HOBO_ID = "22264000")
 HOBO6<-mutate(HOBO6, HOBO_ID = "22264001")
 HOBO7<-mutate(HOBO7, HOBO_ID = "22264004")
+HOBO8<-mutate(HOBO8, HOBO_ID = "22264003")
 ```
 
 
 #### Use Bind Rows to combine Data
 
 ```{r}
-HOBO_data_full<- bind_rows(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7)
+HOBO_data_full<- bind_rows(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7, HOBO8)
 ```
 
 
@@ -54,13 +56,11 @@ HOBO_data_full<- bind_rows(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7)
 
 ```{r}
 HOBO_clean<- HOBO_data_full%>%
-  select(-`Host.Connected`, -`End.of.File`, -`Button.Down`,-`Button.Up`)%>%
-  mutate(Temp_C = coalesce(Temperature.....C., Temperature....C)) %>%
-  select(-Temperature.....C., -Temperature....C)%>%
+  mutate(Temp_C = Temperature....C) %>%
   rename(Date_Time_HST=Date.Time..HST.)%>%
   mutate(
     Treatment = case_when(
-      HOBO_ID %in% c("22264004", "22263998", "22263996") ~ "White",
+      HOBO_ID %in% c("22264004", "22263998", "22263996", "22264003") ~ "White",
       HOBO_ID %in% c("22263995", "22263999", "22264000","22264001") ~ "Black",
       TRUE                                              ~ "Unknown" 
     ))%>%
@@ -252,7 +252,8 @@ ggplot(data = test, aes(x = Date_Time_HST, y = Temp_C, color = factor(HOBO_ID)))
 ```{r}
 daily_max_df <- HOBO_clean %>%
   filter(!is.na(Temp_C)) %>%
-  mutate(Date = as.Date(Date_Time_HST)) %>% 
+  # Use as_date() directly from lubridate
+  mutate(Date = as_date(Date_Time_HST)) %>% 
   group_by(Date, HOBO_ID, Treatment) %>%
   summarise(
     max_temp = max(Temp_C, na.rm = TRUE),
@@ -261,6 +262,7 @@ daily_max_df <- HOBO_clean %>%
 ```
 
 
+IDK why this broke
 
 ```{r}
 max_model <- lmer(max_temp ~ Treatment + (1 | HOBO_ID), data = daily_max_df)
@@ -326,6 +328,35 @@ ggplot(treatment_daily_summary, aes(x = Date, y = black_minus_white)) +
   ) +
   theme_minimal()
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
