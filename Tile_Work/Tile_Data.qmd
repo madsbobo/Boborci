@@ -102,17 +102,6 @@ ggplot(data=HOBO_OneDay, aes(x=Time, y=Temp_C, color=Treatment))+
 #### Going Monthly
 
 ```{r}
-HOBO_July<- HOBO_clean %>% 
-  filter(Date >= "07/01/2026" & Date <= "07/28/2026")
-```
-
-```{r}
-ggplot(data=HOBO_July, aes(x=Time, y=Temp_C, color=Treatment))+
-                            geom_line()+
-  ylim(22,35)
-```
-
-```{r}
 HOBO_June<- HOBO_clean %>% 
   filter(Date >= "06/08/2026" & Date <= "06/30/2026")
 ```
@@ -123,7 +112,29 @@ ggplot(data=HOBO_June, aes(x=Time, y=Temp_C, color=Treatment))+
   ylim(22,35)
 ```
 
-# Significant Results!
+```{r}
+HOBO_July<- HOBO_clean %>% 
+  filter(Date >= "07/01/2026" & Date <= "07/31/2026")
+```
+
+```{r}
+ggplot(data=HOBO_July, aes(x=Time, y=Temp_C, color=Treatment))+
+                            geom_line()+
+  ylim(22,35)
+```
+
+```{r}
+HOBO_August<- HOBO_clean %>% 
+  filter(Date >= "08/01/2026" & Date <= "08/12/2026")
+```
+
+```{r}
+ggplot(data=HOBO_August, aes(x=Time, y=Temp_C, color=Treatment))+
+                            geom_line()+
+  ylim(22,35)
+```
+
+# T tests and comparisons 
 
 ```{r}
 t_result <- t.test(Temp_C ~ Treatment, data = HOBO_clean)
@@ -131,54 +142,6 @@ t_result <- t.test(Temp_C ~ Treatment, data = HOBO_clean)
 t_result
 ```
 
-group by day, get max temp and average through the month ~Treatment 
-
-
-
-adm_ttest <- t.test(daily_max ~ Treatment, data = adm)
-
-
-
-
-```{r}
-adm_July<-HOBO_July%>%
-  group_by(Date, Treatment) %>%
-  summarise(
-    daily_max = max(Temp_C, na.rm = TRUE), 
-    .groups = "drop"
-  ) %>%
-  group_by(Treatment) %>%
-  summarise(
-    avg_daily_max = mean(daily_max, na.rm = TRUE), 
-    .groups = "drop"
-  )
-  
-```
-
-
-```{r}
-adm_June_for_ttest <- HOBO_June %>%
-  group_by(Date, Treatment) %>%
-  summarise(
-    daily_max = max(Temp_C, na.rm = TRUE), 
-    .groups = "drop"
-  ) %>%
-  mutate(
-    daily_max = ifelse(is.infinite(daily_max), NA, daily_max)
-  )
-
-```
-```{r}
-t_test_June <- t.test(daily_max ~ Treatment, data = adm_June_for_ttest)
-```
-
-```{r}
-adm_June_for_ttest %>%
-  filter(!is.na(daily_max)) %>%
-  group_by(Treatment) %>%
-  summarise(sample_size = n())
-
-```
 
 
 
@@ -202,6 +165,7 @@ t_daily_max <- t.test(daily_max ~ Treatment, data = daily_max)
 ```{r}
 anova(lm(daily_max~Treatment, data=daily_max))
 ```
+## This is me trying multiple ways hoping to get a better result 
 
 ```{r}
 daily_max%>%
@@ -211,43 +175,21 @@ daily_max%>%
     .groups = "drop"
   )
 ```
+# Good Graph
 ```{r}
 ggplot(data=HOBO_clean, aes(x=Date_Time_HST, y=Temp_C, color=Treatment))+
-                            geom_line()
+                            geom_line()+
+  ylim(22,40)
+ggsave("June-Aug.png")
 ```
 ```{r}
 HOBO_clean <- HOBO_clean %>%
   mutate(Date_Time_HST = mdy_hms(Date_Time_HST))
 ```
 
-```{r}
-test <- HOBO_clean %>%
-  filter(
-    Date_Time_HST >= mdy_hms("07/01/2026 01:00:00"),
-    Date_Time_HST <= mdy_hms("07/04/2026 23:00:00")
-  )
-```
-
-```{r}
-ggplot(data = test, aes(x = Date_Time_HST, y = Temp_C, color = factor(HOBO_ID))) +
-  geom_point() +
-  geom_line()
-```
-
-### Do a max difference comparison 
 
 
-
-
-
-
-
-
-
-
-
-
-
+# Do a max difference comparison 
 
 ```{r}
 daily_max_df <- HOBO_clean %>%
@@ -261,8 +203,6 @@ daily_max_df <- HOBO_clean %>%
   )
 ```
 
-
-IDK why this broke
 
 ```{r}
 max_model <- lmer(max_temp ~ Treatment + (1 | HOBO_ID), data = daily_max_df)
@@ -327,6 +267,8 @@ ggplot(treatment_daily_summary, aes(x = Date, y = black_minus_white)) +
     y = "Temperature Difference (°C)"
   ) +
   theme_minimal()
+
+ggsave("Temp_Diff_Graph.png")
 ```
 
 
@@ -352,11 +294,73 @@ ggplot(treatment_daily_summary, aes(x = Date, y = black_minus_white)) +
 
 
 
+# random 
+```{r}
+HOBO_clean <- HOBO_clean %>%
+  mutate(Date_Time_HST = mdy_hms(Date_Time_HST))
+```
+
+```{r}
+test <- HOBO_clean %>%
+  filter(
+    Date_Time_HST >= mdy_hms("07/01/2026 01:00:00"),
+    Date_Time_HST <= mdy_hms("07/04/2026 23:00:00")
+  )
+```
+
+```{r}
+ggplot(data = test, aes(x = Date_Time_HST, y = Temp_C, color = factor(HOBO_ID))) +
+  geom_point() +
+  geom_line()
+```
+
+
+# Not sure if any of this was right for ADM- relook at it
+
+
+group by day, get max temp and average through the month ~Treatment 
+
+
+
+adm_ttest <- t.test(daily_max ~ Treatment, data = adm)
 
 
 
 
 
+adm_July<-HOBO_July%>%
+  group_by(Date, Treatment) %>%
+  summarise(
+    daily_max = max(Temp_C, na.rm = TRUE), 
+    .groups = "drop"
+  ) %>%
+  group_by(Treatment) %>%
+  summarise(
+    avg_daily_max = mean(daily_max, na.rm = TRUE), 
+    .groups = "drop"
+  )
+  
+
+
+
+adm_June_for_ttest <- HOBO_June %>%
+  group_by(Date, Treatment) %>%
+  summarise(
+    daily_max = max(Temp_C, na.rm = TRUE), 
+    .groups = "drop"
+  ) %>%
+  mutate(
+    daily_max = ifelse(is.infinite(daily_max), NA, daily_max)
+  )
+
+
+t_test_June <- t.test(daily_max ~ Treatment, data = adm_June_for_ttest)
+
+
+adm_June_for_ttest %>%
+  filter(!is.na(daily_max)) %>%
+  group_by(Treatment) %>%
+  summarise(sample_size = n())
 
 
 
