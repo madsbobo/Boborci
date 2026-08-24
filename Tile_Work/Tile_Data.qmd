@@ -71,6 +71,31 @@ write_csv(HOBO_clean, "MFB_HOBO_Clean.csv")
 ```
 
 
+```{r}
+Tides<- read.csv("Data/Raw_Tides_Minute.csv")
+```
+
+```{r}
+Tides <- Tides %>%
+  mutate(
+    Date_Time_HST = ymd_hm(paste(Date, Time), tz = "HST")
+  )
+```
+
+```{r}
+HOBOTide<-HOBO_clean %>%
+  mutate(
+    Date_Time_HST = mdy_hms(Date_Time_HST, tz = "HST")
+  )
+```
+
+```{r}
+HOBO_Tides<- HOBOTide %>%
+  left_join(Tides%>%
+              select(-Date, -Time,-Zone),
+             by="Date_Time_HST")
+```
+
 
 ### Plot Data
 
@@ -142,6 +167,12 @@ t_result <- t.test(Temp_C ~ Treatment, data = HOBO_clean)
 t_result
 ```
 
+```{r}
+avg_tile<- HOBO_clean %>%
+  group_by(Treatment)%>%
+  summarize(mean(Temp_C))
+avg_tile
+```
 
 
 
@@ -271,17 +302,65 @@ ggplot(treatment_daily_summary, aes(x = Date, y = black_minus_white)) +
 ggsave("Temp_Diff_Graph.png")
 ```
 
+# Tide Correcting 
+
+add in blocks for each hobo and then add what the tide height is for each block and then do multiple if else statements to account for each block
+
+Then group by treatment to get the average exposed/submerged
+
+if block height >tide height then exposed=True
+if block height <tide height then exposed= false
+
+for mica- then group by treatment and average for exposed=false
 
 
+```{r}
+HOBO_Tides<-HOBO_Tides%>%
+  mutate(
+    Block = case_when(
+      HOBO_ID %in% c("22264004", "22263995") ~ "2",
+      HOBO_ID %in% c("22263998", "22264000") ~ "4",
+      HOBO_ID %in% c("22263999", "22263996") ~ "6",
+      HOBO_ID %in% c("22264001", "22264003") ~ "8",
+      TRUE                                              ~ "Unknown" 
+    ))
+```
 
 
+if tide_height > 0.26 for Block 2 then submerged=TRUE
+if tide_height > 0.05 for Block 4 then submerged=TRUE
+if tide_height > 0.003 for Block 6 then submerged=TRUE
+if tide_height > 0.065 for Block 8 then submerged=TRUE
+
+```{r}
+HOBO_Tides<- HOBO_Tides%>%
+  mutate(result = case_when(
+    Block == "2" & Tide_Height > 0.26  ~ "Submerged",
+    Block == "4" & Tide_Height > 0.05 ~ "Submerged",
+    Block == "6" & Tide_Height > 0.003 ~ "Submerged",
+    Block == "8" & Tide_Height > 0.065 ~ "Submerged",
+    TRUE ~ "Exposed" 
+  ))
+```
+
+```{r}
+avg<- HOBO_Tides%>%
+  group_by(Treatment, result)%>%
+  summarize(mean(Temp_C),
+            min(Temp_C),
+            max(Temp_C))
+```
+
+```{r}
+HOBO_Tides%>%
+  filter(result== "Exposed" & Treatment== "Black")
+
+%>%
+  summarize(mean(Temp_C))
+```
 
 
-
-
-
-
-
+For showing Black Tiles work: take exposed days find the max temps and then average those across time
 
 
 
