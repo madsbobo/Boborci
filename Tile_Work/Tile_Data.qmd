@@ -332,7 +332,6 @@ if tide_height > 0.05 for Block 4 then submerged=TRUE
 if tide_height > 0.003 for Block 6 then submerged=TRUE
 if tide_height > 0.065 for Block 8 then submerged=TRUE
 
-```{r}
 HOBO_Tides<- HOBO_Tides%>%
   mutate(result = case_when(
     Block == "2" & Tide_Height > 0.26  ~ "Submerged",
@@ -341,7 +340,23 @@ HOBO_Tides<- HOBO_Tides%>%
     Block == "8" & Tide_Height > 0.065 ~ "Submerged",
     TRUE ~ "Exposed" 
   ))
+
+
+changing this to a point they were more submerged for longer
+
+```{r}
+HOBO_Tides<- HOBO_Tides%>%
+  mutate(result = case_when(
+    Block == "2" & Tide_Height > 0.5  ~ "Submerged",
+    Block == "4" & Tide_Height > 0.5 ~ "Submerged",
+    Block == "6" & Tide_Height > 0.5 ~ "Submerged",
+    Block == "8" & Tide_Height > 0.5 ~ "Submerged",
+    TRUE ~ "Exposed" 
+  ))
 ```
+
+
+
 
 ```{r}
 avg<- HOBO_Tides%>%
