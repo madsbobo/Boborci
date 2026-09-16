@@ -20,16 +20,67 @@ library(lmerTest)
 
 ### Read in Data Files
 
+
+This is to include early June Data
 ```{r}
-HOBO1<-read.csv("Data/22263995_08_12.csv")
-HOBO2<-read.csv("Data/22263996_08_12.csv")
-HOBO3<-read.csv("Data/22263998_08_12.csv")
-HOBO4<-read.csv("Data/22263999_08_12.csv")
-HOBO5<-read.csv("Data/22264000_08_12.csv")
-HOBO6<-read.csv("Data/22264001_08_12.csv")
-HOBO7<-read.csv("Data/22264004_08_12.csv")
-HOBO8<-read.csv("Data/22264003_08_12.csv")
+HOBO1_A<-read.csv("Data/22263995_08_12.csv")
+HOBO2_A<-read.csv("Data/22263996_08_12.csv")
+HOBO3_A<-read.csv("Data/22263998_08_12.csv")
+HOBO4_A<-read.csv("Data/22263999_08_12.csv")
+HOBO5_A<-read.csv("Data/22264000_08_12.csv")
+HOBO6_A<-read.csv("Data/22264001_08_12.csv")
+HOBO7_A<-read.csv("Data/22264004_08_12.csv")
+HOBO8_A<-read.csv("Data/22264003_08_12.csv")
 ```
+
+This has through the final timepoint data
+```{r}
+HOBO1_B<-read.csv("Data/T6_Data/22263995 2026-09-10 09_22_32 HST.csv")
+HOBO2_B<-read.csv("Data/T6_Data/22263996 2026-09-10 09_24_12 HST.csv")
+HOBO3_B<-read.csv("Data/T6_Data/22263998 2026-09-10 09_25_09 HST.csv")
+HOBO4_B<-read.csv("Data/T6_Data/22263999 2026-09-10 09_26_08 HST.csv")
+HOBO5_B<-read.csv("Data/T6_Data/22264000 2026-09-10 09_27_23 HST.csv")
+HOBO6_B<-read.csv("Data/T6_Data/22264001 2026-09-10 09_28_17 HST.csv")
+HOBO7_B<-read.csv("Data/T6_Data/22264004 2026-09-10 09_31_53 HST.csv")
+HOBO8_B<-read.csv("Data/T6_Data/22264003 2026-09-10 09_29_35 HST (Data HST).xlsx - Data.csv")
+```
+
+Combine them
+```{r}
+HOBO1 <- bind_rows(HOBO1_A, HOBO1_B) %>%
+  distinct() %>%                      # Removes duplicate rows if the split overlapped
+  arrange(Date.Time..HST.)                  # Ensure sequential time order (replace 'timestamp' with your time column name)
+
+HOBO2 <- bind_rows(HOBO2_A, HOBO2_B) %>%
+  distinct() %>%                
+  arrange(Date.Time..HST.)                
+
+HOBO3 <- bind_rows(HOBO3_A, HOBO3_B) %>%
+  distinct() %>%                      
+  arrange(Date.Time..HST.)   
+
+HOBO4 <- bind_rows(HOBO4_A, HOBO4_B) %>%
+  distinct() %>%                      
+  arrange(Date.Time..HST.)                   
+
+HOBO5 <- bind_rows(HOBO5_A, HOBO5_B) %>%
+  distinct() %>%                  
+  arrange(Date.Time..HST.)           
+
+HOBO6 <- bind_rows(HOBO6_A, HOBO6_B) %>%
+  distinct() %>%                      
+  arrange(Date.Time..HST.)                  
+
+HOBO7 <- bind_rows(HOBO7_A, HOBO7_B) %>%
+  distinct() %>%                     
+  arrange(Date.Time..HST.)                
+
+HOBO8 <- bind_rows(HOBO8_A, HOBO8_B) %>%
+  distinct() %>%                      
+  arrange(Date.Time..HST.)                
+
+```
+
 
 ### Add HOBO ID Numbers
 
@@ -56,20 +107,22 @@ HOBO_data_full<- bind_rows(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7, HOBO
 
 ```{r}
 HOBO_clean<- HOBO_data_full%>%
-  mutate(Temp_C = Temperature....C) %>%
-  rename(Date_Time_HST=Date.Time..HST.)%>%
+  select(-`Host.Connected`, -`End.of.File`)%>%
+  mutate(Temp_C = coalesce(Temperature.....C., Temperature....C)) %>%
+  select(-Temperature.....C., -Temperature....C)%>%
+  rename(Date_Time_HST=Date.Time..HST.)%>% 
   mutate(
     Treatment = case_when(
       HOBO_ID %in% c("22264004", "22263998", "22263996", "22264003") ~ "White",
       HOBO_ID %in% c("22263995", "22263999", "22264000","22264001") ~ "Black",
       TRUE                                              ~ "Unknown" 
     ))%>%
-      separate(`Date_Time_HST`, into = c("Date", "Time"), sep = " ", remove = FALSE)
+      separate(`Date_Time_HST`, into = c("Date", "Time"), sep = " ", remove = FALSE)%>%
+  filter(Date <= "08/26/2026")
 
+
+``` 
 write_csv(HOBO_clean, "MFB_HOBO_Clean.csv")
-  
-```
-
 
 ```{r}
 Tides<- read.csv("Data/Raw_Tides_Minute.csv")
@@ -102,7 +155,7 @@ HOBO_Tides<- HOBOTide %>%
 ```{r}
 ggplot(data=HOBO_clean, aes(x=Date, y=Temp_C, color=Treatment))+
                             geom_line()+
-  ylim(22,28)
+  coord_cartesian(ylim=c(22,38))
 ```
 
 
@@ -150,7 +203,7 @@ ggplot(data=HOBO_July, aes(x=Time, y=Temp_C, color=Treatment))+
 
 ```{r}
 HOBO_August<- HOBO_clean %>% 
-  filter(Date >= "08/01/2026" & Date <= "08/12/2026")
+  filter(Date >= "08/01/2026" & Date <= "08/26/2026")
 ```
 
 ```{r}
@@ -168,9 +221,19 @@ t_result
 ```
 
 ```{r}
+HOBO_clean %>%
+  group_by(Treatment) %>%
+  summarize(
+    mean_temp = mean(Temp_C, na.rm = TRUE),
+    na_count = sum(is.na(Temp_C))
+  )
+```
+
+
+```{r}
 avg_tile<- HOBO_clean %>%
   group_by(Treatment)%>%
-  summarize(mean(Temp_C))
+  summarize(mean_temp = mean(Temp_C, na.rm = TRUE))
 avg_tile
 ```
 
@@ -210,9 +273,10 @@ daily_max%>%
 ```{r}
 ggplot(data=HOBO_clean, aes(x=Date_Time_HST, y=Temp_C, color=Treatment))+
                             geom_line()+
-  ylim(22,40)
-ggsave("June-Aug.png")
+  coord_cartesian(ylim = c(22,40))
+
 ```
+ggsave("June-Aug.png")
 ```{r}
 HOBO_clean <- HOBO_clean %>%
   mutate(Date_Time_HST = mdy_hms(Date_Time_HST))
@@ -238,6 +302,12 @@ daily_max_df <- HOBO_clean %>%
 ```{r}
 max_model <- lmer(max_temp ~ Treatment + (1 | HOBO_ID), data = daily_max_df)
 summary(max_model)
+```
+
+
+```{r}
+lm_model <- lm(max_temp ~ Treatment, data = daily_max_df)
+summary(lm_model)
 ```
 
 ```{r}
@@ -359,19 +429,20 @@ HOBO_Tides<- HOBO_Tides%>%
 
 
 ```{r}
-avg<- HOBO_Tides%>%
-  group_by(Treatment, result)%>%
-  summarize(mean(Temp_C),
-            min(Temp_C),
-            max(Temp_C))
+avg <- HOBO_Tides %>%
+  group_by(Treatment, result) %>%
+  summarize(
+    mean_temp = mean(Temp_C, na.rm = TRUE),
+    min_temp  = min(Temp_C, na.rm = TRUE),
+    max_temp  = max(Temp_C, na.rm = TRUE),
+    .groups   = "drop"
+  )
 ```
 
 ```{r}
 HOBO_Tides%>%
-  filter(result== "Exposed" & Treatment== "Black")
-
-%>%
-  summarize(mean(Temp_C))
+  filter(result== "Exposed" & Treatment== "Black")%>%
+  summarize(mean(Temp_C, na.rm=TRUE))
 ```
 
 

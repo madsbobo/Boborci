@@ -172,67 +172,132 @@ Attaching package: 'lmerTest'</code></pre>
 </section>
 <section id="read-in-data-files" class="level3">
 <h3 class="anchored" data-anchor-id="read-in-data-files">Read in Data Files</h3>
+<p>This is to include early June Data</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>HOBO1<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22263995_08_12.csv"</span>)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>HOBO2<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22263996_08_12.csv"</span>)</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>HOBO3<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22263998_08_12.csv"</span>)</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>HOBO4<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22263999_08_12.csv"</span>)</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>HOBO5<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22264000_08_12.csv"</span>)</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>HOBO6<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22264001_08_12.csv"</span>)</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>HOBO7<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22264004_08_12.csv"</span>)</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>HOBO8<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22264003_08_12.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>HOBO1_A<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22263995_08_12.csv"</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>HOBO2_A<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22263996_08_12.csv"</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>HOBO3_A<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22263998_08_12.csv"</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>HOBO4_A<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22263999_08_12.csv"</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>HOBO5_A<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22264000_08_12.csv"</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>HOBO6_A<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22264001_08_12.csv"</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>HOBO7_A<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22264004_08_12.csv"</span>)</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>HOBO8_A<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/22264003_08_12.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This has through the final timepoint data</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>HOBO1_B<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/T6_Data/22263995 2026-09-10 09_22_32 HST.csv"</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>HOBO2_B<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/T6_Data/22263996 2026-09-10 09_24_12 HST.csv"</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>HOBO3_B<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/T6_Data/22263998 2026-09-10 09_25_09 HST.csv"</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>HOBO4_B<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/T6_Data/22263999 2026-09-10 09_26_08 HST.csv"</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>HOBO5_B<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/T6_Data/22264000 2026-09-10 09_27_23 HST.csv"</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>HOBO6_B<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/T6_Data/22264001 2026-09-10 09_28_17 HST.csv"</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>HOBO7_B<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/T6_Data/22264004 2026-09-10 09_31_53 HST.csv"</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>HOBO8_B<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Data/T6_Data/22264003 2026-09-10 09_29_35 HST (Data HST).xlsx - Data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Combine them</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>HOBO1 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO1_A, HOBO1_B) <span class="sc">%&gt;%</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span>                      <span class="co"># Removes duplicate rows if the split overlapped</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Date.Time..HST.)                  <span class="co"># Ensure sequential time order (replace 'timestamp' with your time column name)</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>HOBO2 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO2_A, HOBO2_B) <span class="sc">%&gt;%</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span>                </span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Date.Time..HST.)                </span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>HOBO3 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO3_A, HOBO3_B) <span class="sc">%&gt;%</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span>                      </span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Date.Time..HST.)   </span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>HOBO4 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO4_A, HOBO4_B) <span class="sc">%&gt;%</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span>                      </span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Date.Time..HST.)                   </span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>HOBO5 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO5_A, HOBO5_B) <span class="sc">%&gt;%</span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span>                  </span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Date.Time..HST.)           </span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>HOBO6 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO6_A, HOBO6_B) <span class="sc">%&gt;%</span></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span>                      </span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Date.Time..HST.)                  </span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a>HOBO7 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO7_A, HOBO7_B) <span class="sc">%&gt;%</span></span>
+<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span>                     </span>
+<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Date.Time..HST.)                </span>
+<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a>HOBO8 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO8_A, HOBO8_B) <span class="sc">%&gt;%</span></span>
+<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span>                      </span>
+<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Date.Time..HST.)                </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="add-hobo-id-numbers" class="level3">
 <h3 class="anchored" data-anchor-id="add-hobo-id-numbers">Add HOBO ID Numbers</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>HOBO1<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO1, <span class="at">HOBO_ID =</span> <span class="st">"22263995"</span>)</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>HOBO2<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO2, <span class="at">HOBO_ID =</span> <span class="st">"22263996"</span>)</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>HOBO3<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO3, <span class="at">HOBO_ID =</span> <span class="st">"22263998"</span>)</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>HOBO4<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO4, <span class="at">HOBO_ID =</span> <span class="st">"22263999"</span>)</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>HOBO5<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO5, <span class="at">HOBO_ID =</span> <span class="st">"22264000"</span>)</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>HOBO6<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO6, <span class="at">HOBO_ID =</span> <span class="st">"22264001"</span>)</span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>HOBO7<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO7, <span class="at">HOBO_ID =</span> <span class="st">"22264004"</span>)</span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>HOBO8<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO8, <span class="at">HOBO_ID =</span> <span class="st">"22264003"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>HOBO1<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO1, <span class="at">HOBO_ID =</span> <span class="st">"22263995"</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>HOBO2<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO2, <span class="at">HOBO_ID =</span> <span class="st">"22263996"</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>HOBO3<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO3, <span class="at">HOBO_ID =</span> <span class="st">"22263998"</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>HOBO4<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO4, <span class="at">HOBO_ID =</span> <span class="st">"22263999"</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>HOBO5<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO5, <span class="at">HOBO_ID =</span> <span class="st">"22264000"</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>HOBO6<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO6, <span class="at">HOBO_ID =</span> <span class="st">"22264001"</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>HOBO7<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO7, <span class="at">HOBO_ID =</span> <span class="st">"22264004"</span>)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>HOBO8<span class="ot">&lt;-</span><span class="fu">mutate</span>(HOBO8, <span class="at">HOBO_ID =</span> <span class="st">"22264003"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="use-bind-rows-to-combine-data" class="level4">
 <h4 class="anchored" data-anchor-id="use-bind-rows-to-combine-data">Use Bind Rows to combine Data</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>HOBO_data_full<span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7, HOBO8)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>HOBO_data_full<span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(HOBO1, HOBO2, HOBO3, HOBO4, HOBO5, HOBO6, HOBO7, HOBO8)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
 <section id="clean-data-removing-unecessary-columns-renaming-columns-adding-treatments-fixing-datetime" class="level3">
 <h3 class="anchored" data-anchor-id="clean-data-removing-unecessary-columns-renaming-columns-adding-treatments-fixing-datetime">Clean Data: removing unecessary columns, renaming columns, adding treatments, fixing Date/Time</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>HOBO_clean<span class="ot">&lt;-</span> HOBO_data_full<span class="sc">%&gt;%</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Temp_C =</span> Temperature....C) <span class="sc">%&gt;%</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Date_Time_HST=</span>Date.Time..HST.)<span class="sc">%&gt;%</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">Treatment =</span> <span class="fu">case_when</span>(</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>      HOBO_ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"22264004"</span>, <span class="st">"22263998"</span>, <span class="st">"22263996"</span>, <span class="st">"22264003"</span>) <span class="sc">~</span> <span class="st">"White"</span>,</span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>      HOBO_ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"22263995"</span>, <span class="st">"22263999"</span>, <span class="st">"22264000"</span>,<span class="st">"22264001"</span>) <span class="sc">~</span> <span class="st">"Black"</span>,</span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span>                                              <span class="sc">~</span> <span class="st">"Unknown"</span> </span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>    ))<span class="sc">%&gt;%</span></span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">separate</span>(<span class="st">`</span><span class="at">Date_Time_HST</span><span class="st">`</span>, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"Date"</span>, <span class="st">"Time"</span>), <span class="at">sep =</span> <span class="st">" "</span>, <span class="at">remove =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(HOBO_clean, <span class="st">"MFB_HOBO_Clean.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>HOBO_clean<span class="ot">&lt;-</span> HOBO_data_full<span class="sc">%&gt;%</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="st">`</span><span class="at">Host.Connected</span><span class="st">`</span>, <span class="sc">-</span><span class="st">`</span><span class="at">End.of.File</span><span class="st">`</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Temp_C =</span> <span class="fu">coalesce</span>(Temperature.....C., Temperature....C)) <span class="sc">%&gt;%</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Temperature.....C., <span class="sc">-</span>Temperature....C)<span class="sc">%&gt;%</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Date_Time_HST=</span>Date.Time..HST.)<span class="sc">%&gt;%</span> </span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">Treatment =</span> <span class="fu">case_when</span>(</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>      HOBO_ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"22264004"</span>, <span class="st">"22263998"</span>, <span class="st">"22263996"</span>, <span class="st">"22264003"</span>) <span class="sc">~</span> <span class="st">"White"</span>,</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>      HOBO_ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"22263995"</span>, <span class="st">"22263999"</span>, <span class="st">"22264000"</span>,<span class="st">"22264001"</span>) <span class="sc">~</span> <span class="st">"Black"</span>,</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span>                                              <span class="sc">~</span> <span class="st">"Unknown"</span> </span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>    ))<span class="sc">%&gt;%</span></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">separate</span>(<span class="st">`</span><span class="at">Date_Time_HST</span><span class="st">`</span>, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"Date"</span>, <span class="st">"Time"</span>), <span class="at">sep =</span> <span class="st">" "</span>, <span class="at">remove =</span> <span class="cn">FALSE</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">&lt;=</span> <span class="st">"08/26/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>write_csv(HOBO_clean, “MFB_HOBO_Clean.csv”)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>Tides<span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"Data/Raw_Tides_Minute.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>Tides <span class="ot">&lt;-</span> Tides <span class="sc">%&gt;%</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">Date_Time_HST =</span> <span class="fu">ymd_hm</span>(<span class="fu">paste</span>(Date, Time), <span class="at">tz =</span> <span class="st">"HST"</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>HOBOTide<span class="ot">&lt;-</span>HOBO_clean <span class="sc">%&gt;%</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">Date_Time_HST =</span> <span class="fu">mdy_hms</span>(Date_Time_HST, <span class="at">tz =</span> <span class="st">"HST"</span>)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>HOBO_Tides<span class="ot">&lt;-</span> HOBOTide <span class="sc">%&gt;%</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(Tides<span class="sc">%&gt;%</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>              <span class="fu">select</span>(<span class="sc">-</span>Date, <span class="sc">-</span>Time,<span class="sc">-</span>Zone),</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">by=</span><span class="st">"Date_Time_HST"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="plot-data" class="level3">
 <h3 class="anchored" data-anchor-id="plot-data">Plot Data</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_clean, <span class="fu">aes</span>(<span class="at">x=</span>Date, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">28</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 5231 rows containing missing values or values outside the scale range
-(`geom_line()`).</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_clean, <span class="fu">aes</span>(<span class="at">x=</span>Date, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">22</span>,<span class="dv">38</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Tile_Data_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Tile_Data_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -240,21 +305,21 @@ Attaching package: 'lmerTest'</code></pre>
 <section id="try-to-isolate-daily-data-to-see-patterns" class="level4">
 <h4 class="anchored" data-anchor-id="try-to-isolate-daily-data-to-see-patterns">Try to isolate Daily Data to see patterns</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>HOBO_OneDay<span class="ot">&lt;-</span>HOBO_clean <span class="sc">%&gt;%</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">==</span> <span class="st">"07/02/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>HOBO_OneDay<span class="ot">&lt;-</span>HOBO_clean <span class="sc">%&gt;%</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">==</span> <span class="st">"07/02/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
 <section id="plot-that-data" class="level3">
 <h3 class="anchored" data-anchor-id="plot-that-data">Plot that Data</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_OneDay, <span class="fu">aes</span>(<span class="at">x=</span>Time, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_OneDay, <span class="fu">aes</span>(<span class="at">x=</span>Time, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Tile_Data_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Tile_Data_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -265,132 +330,55 @@ Attaching package: 'lmerTest'</code></pre>
 <section id="going-monthly" class="level4">
 <h4 class="anchored" data-anchor-id="going-monthly">Going Monthly</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>HOBO_June<span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span> </span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">&gt;=</span> <span class="st">"06/08/2026"</span> <span class="sc">&amp;</span> Date <span class="sc">&lt;=</span> <span class="st">"06/30/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>HOBO_June<span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span> </span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">&gt;=</span> <span class="st">"06/08/2026"</span> <span class="sc">&amp;</span> Date <span class="sc">&lt;=</span> <span class="st">"06/30/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_June, <span class="fu">aes</span>(<span class="at">x=</span>Time, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Tile_Data_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>HOBO_July<span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span> </span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">&gt;=</span> <span class="st">"07/01/2026"</span> <span class="sc">&amp;</span> Date <span class="sc">&lt;=</span> <span class="st">"07/31/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_July, <span class="fu">aes</span>(<span class="at">x=</span>Time, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Tile_Data_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>HOBO_August<span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span> </span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">&gt;=</span> <span class="st">"08/01/2026"</span> <span class="sc">&amp;</span> Date <span class="sc">&lt;=</span> <span class="st">"08/12/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_August, <span class="fu">aes</span>(<span class="at">x=</span>Time, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Tile_Data_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="t-tests-and-comparisons" class="level1">
-<h1>T tests and comparisons</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>t_result <span class="ot">&lt;-</span> <span class="fu">t.test</span>(Temp_C <span class="sc">~</span> Treatment, <span class="at">data =</span> HOBO_clean)</span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>t_result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-    Welch Two Sample t-test
-
-data:  Temp_C by Treatment
-t = 49.283, df = 668671, p-value &lt; 2.2e-16
-alternative hypothesis: true difference in means between group Black and group White is not equal to 0
-95 percent confidence interval:
- 0.1471161 0.1593022
-sample estimates:
-mean in group Black mean in group White 
-           26.37278            26.21957 </code></pre>
-</div>
-</div>
-<section id="starting-fresh" class="level3">
-<h3 class="anchored" data-anchor-id="starting-fresh">Starting Fresh</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>daily_max<span class="ot">&lt;-</span>HOBO_clean<span class="sc">%&gt;%</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Date, Treatment, HOBO_ID) <span class="sc">%&gt;%</span></span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">daily_max =</span> <span class="fu">max</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">daily_max =</span> <span class="fu">ifelse</span>(<span class="fu">is.infinite</span>(daily_max), <span class="cn">NA</span>, daily_max)</span>
-<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>t_daily_max <span class="ot">&lt;-</span> <span class="fu">t.test</span>(daily_max <span class="sc">~</span> Treatment, <span class="at">data =</span> daily_max)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(<span class="fu">lm</span>(daily_max<span class="sc">~</span>Treatment, <span class="at">data=</span>daily_max))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Analysis of Variance Table
-
-Response: daily_max
-           Df  Sum Sq Mean Sq F value   Pr(&gt;F)   
-Treatment   1   34.88  34.877  8.1472 0.004496 **
-Residuals 490 2097.65   4.281                    
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
-</div>
-</div>
-</section>
-<section id="this-is-me-trying-multiple-ways-hoping-to-get-a-better-result" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-me-trying-multiple-ways-hoping-to-get-a-better-result">This is me trying multiple ways hoping to get a better result</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>daily_max<span class="sc">%&gt;%</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Treatment)<span class="sc">%&gt;%</span></span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_daily_max =</span> <span class="fu">mean</span>(daily_max, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 2
-  Treatment avg_daily_max
-  &lt;chr&gt;             &lt;dbl&gt;
-1 Black              28.6
-2 White              28.0</code></pre>
-</div>
-</div>
-</section>
-</section>
-<section id="good-graph" class="level1">
-<h1>Good Graph</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_clean, <span class="fu">aes</span>(<span class="at">x=</span>Date_Time_HST, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">40</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_June, <span class="fu">aes</span>(<span class="at">x=</span>Time, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 5292 rows containing missing values or values outside the scale range
+<pre><code>Warning: Removed 2 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Tile_Data_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>HOBO_July<span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span> </span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">&gt;=</span> <span class="st">"07/01/2026"</span> <span class="sc">&amp;</span> Date <span class="sc">&lt;=</span> <span class="st">"07/31/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_July, <span class="fu">aes</span>(<span class="at">x=</span>Time, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 38 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Tile_Data_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>HOBO_August<span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span> </span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Date <span class="sc">&gt;=</span> <span class="st">"08/01/2026"</span> <span class="sc">&amp;</span> Date <span class="sc">&lt;=</span> <span class="st">"08/26/2026"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_August, <span class="fu">aes</span>(<span class="at">x=</span>Time, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">22</span>,<span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 24 rows containing missing values or values outside the scale range
 (`geom_line()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -400,123 +388,257 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"June-Aug.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Saving 7 x 5 in image</code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 5292 rows containing missing values or values outside the scale range
-(`geom_line()`).</code></pre>
+</section>
+</section>
+<section id="t-tests-and-comparisons" class="level1">
+<h1>T tests and comparisons</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>t_result <span class="ot">&lt;-</span> <span class="fu">t.test</span>(Temp_C <span class="sc">~</span> Treatment, <span class="at">data =</span> HOBO_clean)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>t_result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  Temp_C by Treatment
+t = 42.74, df = 1384483, p-value &lt; 2.2e-16
+alternative hypothesis: true difference in means between group Black and group White is not equal to 0
+95 percent confidence interval:
+ 0.07849415 0.08603938
+sample estimates:
+mean in group Black mean in group White 
+           26.45304            26.37077 </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>HOBO_clean <span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Date_Time_HST =</span> <span class="fu">mdy_hms</span>(Date_Time_HST))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>HOBO_clean <span class="sc">%&gt;%</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Treatment) <span class="sc">%&gt;%</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_temp =</span> <span class="fu">mean</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">na_count =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(Temp_C))</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  Treatment mean_temp na_count
+  &lt;chr&gt;         &lt;dbl&gt;    &lt;int&gt;
+1 Black          26.5       33
+2 White          26.4       31</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>avg_tile<span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Treatment)<span class="sc">%&gt;%</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_temp =</span> <span class="fu">mean</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>avg_tile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  Treatment mean_temp
+  &lt;chr&gt;         &lt;dbl&gt;
+1 Black          26.5
+2 White          26.4</code></pre>
+</div>
+</div>
+<section id="starting-fresh" class="level3">
+<h3 class="anchored" data-anchor-id="starting-fresh">Starting Fresh</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>daily_max<span class="ot">&lt;-</span>HOBO_clean<span class="sc">%&gt;%</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Date, Treatment, HOBO_ID) <span class="sc">%&gt;%</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">daily_max =</span> <span class="fu">max</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">daily_max =</span> <span class="fu">ifelse</span>(<span class="fu">is.infinite</span>(daily_max), <span class="cn">NA</span>, daily_max)</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>t_daily_max <span class="ot">&lt;-</span> <span class="fu">t.test</span>(daily_max <span class="sc">~</span> Treatment, <span class="at">data =</span> daily_max)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(<span class="fu">lm</span>(daily_max<span class="sc">~</span>Treatment, <span class="at">data=</span>daily_max))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: daily_max
+           Df  Sum Sq Mean Sq F value   Pr(&gt;F)   
+Treatment   1   29.08 29.0830  7.8501 0.005245 **
+Residuals 602 2230.29  3.7048                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="this-is-me-trying-multiple-ways-hoping-to-get-a-better-result" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-me-trying-multiple-ways-hoping-to-get-a-better-result">This is me trying multiple ways hoping to get a better result</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>daily_max<span class="sc">%&gt;%</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Treatment)<span class="sc">%&gt;%</span></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_daily_max =</span> <span class="fu">mean</span>(daily_max, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  Treatment avg_daily_max
+  &lt;chr&gt;             &lt;dbl&gt;
+1 Black              28.5
+2 White              28.1</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="good-graph" class="level1">
+<h1>Good Graph</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>HOBO_clean, <span class="fu">aes</span>(<span class="at">x=</span>Date_Time_HST, <span class="at">y=</span>Temp_C, <span class="at">color=</span>Treatment))<span class="sc">+</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">22</span>,<span class="dv">40</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 64 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Tile_Data_files/figure-html/unnamed-chunk-28-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>ggsave(“June-Aug.png”)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>HOBO_clean <span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Date_Time_HST =</span> <span class="fu">mdy_hms</span>(Date_Time_HST))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="do-a-max-difference-comparison" class="level1">
 <h1>Do a max difference comparison</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>daily_max_df <span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Temp_C)) <span class="sc">%&gt;%</span></span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use as_date() directly from lubridate</span></span>
-<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Date =</span> <span class="fu">as_date</span>(Date_Time_HST)) <span class="sc">%&gt;%</span> </span>
-<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Date, HOBO_ID, Treatment) <span class="sc">%&gt;%</span></span>
-<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">max_temp =</span> <span class="fu">max</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>daily_max_df <span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Temp_C)) <span class="sc">%&gt;%</span></span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use as_date() directly from lubridate</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Date =</span> <span class="fu">as_date</span>(Date_Time_HST)) <span class="sc">%&gt;%</span> </span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Date, HOBO_ID, Treatment) <span class="sc">%&gt;%</span></span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">max_temp =</span> <span class="fu">max</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>max_model <span class="ot">&lt;-</span> <span class="fu">lmer</span>(max_temp <span class="sc">~</span> Treatment <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> HOBO_ID), <span class="at">data =</span> daily_max_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>max_model <span class="ot">&lt;-</span> <span class="fu">lmer</span>(max_temp <span class="sc">~</span> Treatment <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> HOBO_ID), <span class="at">data =</span> daily_max_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>boundary (singular) fit: see help('isSingular')</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(max_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(max_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite's method [
 lmerModLmerTest]
 Formula: max_temp ~ Treatment + (1 | HOBO_ID)
    Data: daily_max_df
 
-REML criterion at convergence: 2114.1
+REML criterion at convergence: 2508.2
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--4.7370 -0.4452 -0.2180  0.0333  4.8556 
+-5.1295 -0.4530 -0.2042  0.1029  5.2307 
 
 Random effects:
  Groups   Name        Variance Std.Dev.
  HOBO_ID  (Intercept) 0.000    0.000   
- Residual             4.281    2.069   
-Number of obs: 492, groups:  HOBO_ID, 8
+ Residual             3.705    1.925   
+Number of obs: 604, groups:  HOBO_ID, 8
 
 Fixed effects:
                Estimate Std. Error       df t value Pr(&gt;|t|)    
-(Intercept)     28.5636     0.1325 490.0000 215.645   &lt;2e-16 ***
-TreatmentWhite  -0.5325     0.1866 490.0000  -2.854   0.0045 ** 
+(Intercept)     28.5420     0.1111 602.0000 256.840  &lt; 2e-16 ***
+TreatmentWhite  -0.4389     0.1566 602.0000  -2.802  0.00525 ** 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Correlation of Fixed Effects:
             (Intr)
-TreatmntWht -0.710
+TreatmntWht -0.709
 optimizer (nloptwrap) convergence code: 0 (OK)
 boundary (singular) fit: see help('isSingular')</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>max_t_test<span class="ot">&lt;-</span>daily_max_df <span class="sc">%&gt;%</span></span>
-<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(HOBO_ID, Treatment) <span class="sc">%&gt;%</span></span>
-<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_daily_max =</span> <span class="fu">mean</span>(max_temp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
-<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(mean_daily_max <span class="sc">~</span> Treatment, <span class="at">data =</span> max_t_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>lm_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(max_temp <span class="sc">~</span> Treatment, <span class="at">data =</span> daily_max_df)</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = max_temp ~ Treatment, data = daily_max_df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9.8731 -0.8720 -0.3931  0.1980 10.0680 
+
+Coefficients:
+               Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)     28.5420     0.1111 256.840  &lt; 2e-16 ***
+TreatmentWhite  -0.4389     0.1566  -2.802  0.00525 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.925 on 602 degrees of freedom
+Multiple R-squared:  0.01287,   Adjusted R-squared:  0.01123 
+F-statistic:  7.85 on 1 and 602 DF,  p-value: 0.005245</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>max_t_test<span class="ot">&lt;-</span>daily_max_df <span class="sc">%&gt;%</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(HOBO_ID, Treatment) <span class="sc">%&gt;%</span></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_daily_max =</span> <span class="fu">mean</span>(max_temp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(mean_daily_max <span class="sc">~</span> Treatment, <span class="at">data =</span> max_t_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Welch Two Sample t-test
 
 data:  mean_daily_max by Treatment
-t = 7.8408, df = 5.1753, p-value = 0.000462
+t = 7.0712, df = 4.005, p-value = 0.002101
 alternative hypothesis: true difference in means between group Black and group White is not equal to 0
 95 percent confidence interval:
- 0.3586158 0.7032165
+ 0.2662753 0.6102808
 sample estimates:
 mean in group Black mean in group White 
-           28.56357            28.03265 </code></pre>
+           28.54200            28.10372 </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>treatment_daily_summary <span class="ot">&lt;-</span> daily_max_df <span class="sc">%&gt;%</span></span>
-<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Date, Treatment) <span class="sc">%&gt;%</span></span>
-<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_max_temp =</span> <span class="fu">mean</span>(max_temp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Pivot treatments into columns to compute the difference</span></span>
-<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> Treatment, <span class="at">values_from =</span> avg_max_temp) <span class="sc">%&gt;%</span></span>
-<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Absolute difference between black and white treatment averages</span></span>
-<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">temp_diff =</span> <span class="fu">abs</span>(Black <span class="sc">-</span> White),</span>
-<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Signed difference (positive means Black was hotter, negative means White was hotter)</span></span>
-<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">black_minus_white =</span> Black <span class="sc">-</span> White</span>
-<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>treatment_daily_summary <span class="ot">&lt;-</span> daily_max_df <span class="sc">%&gt;%</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Date, Treatment) <span class="sc">%&gt;%</span></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_max_temp =</span> <span class="fu">mean</span>(max_temp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Pivot treatments into columns to compute the difference</span></span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> Treatment, <span class="at">values_from =</span> avg_max_temp) <span class="sc">%&gt;%</span></span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Absolute difference between black and white treatment averages</span></span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">temp_diff =</span> <span class="fu">abs</span>(Black <span class="sc">-</span> White),</span>
+<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Signed difference (positive means Black was hotter, negative means White was hotter)</span></span>
+<span id="cb64-10"><a href="#cb64-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">black_minus_white =</span> Black <span class="sc">-</span> White</span>
+<span id="cb64-11"><a href="#cb64-11" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>avg_offset <span class="ot">&lt;-</span> <span class="fu">mean</span>(treatment_daily_summary<span class="sc">$</span>black_minus_white, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>avg_offset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>avg_offset <span class="ot">&lt;-</span> <span class="fu">mean</span>(treatment_daily_summary<span class="sc">$</span>black_minus_white, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>avg_offset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.4082377</code></pre>
+<pre><code>[1] 0.3368333</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step B: Find the day with the LARGEST temperature gap</span></span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>largest_gap <span class="ot">&lt;-</span> treatment_daily_summary <span class="sc">%&gt;%</span></span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(temp_diff)) <span class="sc">%&gt;%</span></span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> temp_diff, <span class="at">n =</span> <span class="dv">1</span>)</span>
-<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="co"># View the result</span></span>
-<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Day with the largest temperature difference between treatments:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step B: Find the day with the LARGEST temperature gap</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>largest_gap <span class="ot">&lt;-</span> treatment_daily_summary <span class="sc">%&gt;%</span></span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(temp_diff)) <span class="sc">%&gt;%</span></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> temp_diff, <span class="at">n =</span> <span class="dv">1</span>)</span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a><span class="co"># View the result</span></span>
+<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Day with the largest temperature difference between treatments:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Day with the largest temperature difference between treatments:"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(largest_gap)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(largest_gap)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 5
   Date       White Black temp_diff black_minus_white
@@ -525,24 +647,24 @@ mean in group Black mean in group White
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(treatment_daily_summary, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> black_minus_white)) <span class="sc">+</span></span>
-<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"grey50"</span>) <span class="sc">+</span></span>
-<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> largest_gap, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> black_minus_white), <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(</span>
-<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"text"</span>, </span>
-<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> largest_gap<span class="sc">$</span>Date, </span>
-<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> largest_gap<span class="sc">$</span>black_minus_white, </span>
-<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">paste0</span>(<span class="st">" Max Gap: "</span>, <span class="fu">round</span>(largest_gap<span class="sc">$</span>temp_diff, <span class="dv">2</span>), <span class="st">"°C"</span>),</span>
-<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">fontface =</span> <span class="st">"bold"</span></span>
-<span id="cb60-11"><a href="#cb60-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb60-12"><a href="#cb60-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb60-13"><a href="#cb60-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Daily Temperature Difference (Black Treatment - White Treatment)"</span>,</span>
-<span id="cb60-14"><a href="#cb60-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Positive values indicate Black treatment was hotter"</span>,</span>
-<span id="cb60-15"><a href="#cb60-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Date"</span>,</span>
-<span id="cb60-16"><a href="#cb60-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Temperature Difference (°C)"</span></span>
-<span id="cb60-17"><a href="#cb60-17" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb60-18"><a href="#cb60-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(treatment_daily_summary, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> black_minus_white)) <span class="sc">+</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"grey50"</span>) <span class="sc">+</span></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> largest_gap, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> black_minus_white), <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(</span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"text"</span>, </span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> largest_gap<span class="sc">$</span>Date, </span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> largest_gap<span class="sc">$</span>black_minus_white, </span>
+<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">paste0</span>(<span class="st">" Max Gap: "</span>, <span class="fu">round</span>(largest_gap<span class="sc">$</span>temp_diff, <span class="dv">2</span>), <span class="st">"°C"</span>),</span>
+<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">fontface =</span> <span class="st">"bold"</span></span>
+<span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb71-13"><a href="#cb71-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Daily Temperature Difference (Black Treatment - White Treatment)"</span>,</span>
+<span id="cb71-14"><a href="#cb71-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Positive values indicate Black treatment was hotter"</span>,</span>
+<span id="cb71-15"><a href="#cb71-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Date"</span>,</span>
+<span id="cb71-16"><a href="#cb71-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Temperature Difference (°C)"</span></span>
+<span id="cb71-17"><a href="#cb71-17" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb71-18"><a href="#cb71-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
 ℹ Please use `linewidth` instead.</code></pre>
@@ -554,11 +676,11 @@ mean in group Black mean in group White
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Tile_Data_files/figure-html/unnamed-chunk-28-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Tile_Data_files/figure-html/unnamed-chunk-37-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"Temp_Diff_Graph.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"Temp_Diff_Graph.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Saving 7 x 5 in image</code></pre>
 </div>
@@ -568,11 +690,62 @@ mean in group Black mean in group White
 </div>
 </div>
 </section>
+<section id="tide-correcting" class="level1">
+<h1>Tide Correcting</h1>
+<p>add in blocks for each hobo and then add what the tide height is for each block and then do multiple if else statements to account for each block</p>
+<p>Then group by treatment to get the average exposed/submerged</p>
+<p>if block height &gt;tide height then exposed=True if block height &lt;tide height then exposed= false</p>
+<p>for mica- then group by treatment and average for exposed=false</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>HOBO_Tides<span class="ot">&lt;-</span>HOBO_Tides<span class="sc">%&gt;%</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">Block =</span> <span class="fu">case_when</span>(</span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a>      HOBO_ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"22264004"</span>, <span class="st">"22263995"</span>) <span class="sc">~</span> <span class="st">"2"</span>,</span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a>      HOBO_ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"22263998"</span>, <span class="st">"22264000"</span>) <span class="sc">~</span> <span class="st">"4"</span>,</span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a>      HOBO_ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"22263999"</span>, <span class="st">"22263996"</span>) <span class="sc">~</span> <span class="st">"6"</span>,</span>
+<span id="cb77-7"><a href="#cb77-7" aria-hidden="true" tabindex="-1"></a>      HOBO_ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"22264001"</span>, <span class="st">"22264003"</span>) <span class="sc">~</span> <span class="st">"8"</span>,</span>
+<span id="cb77-8"><a href="#cb77-8" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span>                                              <span class="sc">~</span> <span class="st">"Unknown"</span> </span>
+<span id="cb77-9"><a href="#cb77-9" aria-hidden="true" tabindex="-1"></a>    ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>if tide_height &gt; 0.26 for Block 2 then submerged=TRUE if tide_height &gt; 0.05 for Block 4 then submerged=TRUE if tide_height &gt; 0.003 for Block 6 then submerged=TRUE if tide_height &gt; 0.065 for Block 8 then submerged=TRUE</p>
+<p>HOBO_Tides&lt;- HOBO_Tides%&gt;% mutate(result = case_when( Block == “2” &amp; Tide_Height &gt; 0.26 ~ “Submerged”, Block == “4” &amp; Tide_Height &gt; 0.05 ~ “Submerged”, Block == “6” &amp; Tide_Height &gt; 0.003 ~ “Submerged”, Block == “8” &amp; Tide_Height &gt; 0.065 ~ “Submerged”, TRUE ~ “Exposed” ))</p>
+<p>changing this to a point they were more submerged for longer</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>HOBO_Tides<span class="ot">&lt;-</span> HOBO_Tides<span class="sc">%&gt;%</span></span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">result =</span> <span class="fu">case_when</span>(</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>    Block <span class="sc">==</span> <span class="st">"2"</span> <span class="sc">&amp;</span> Tide_Height <span class="sc">&gt;</span> <span class="fl">0.5</span>  <span class="sc">~</span> <span class="st">"Submerged"</span>,</span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a>    Block <span class="sc">==</span> <span class="st">"4"</span> <span class="sc">&amp;</span> Tide_Height <span class="sc">&gt;</span> <span class="fl">0.5</span> <span class="sc">~</span> <span class="st">"Submerged"</span>,</span>
+<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a>    Block <span class="sc">==</span> <span class="st">"6"</span> <span class="sc">&amp;</span> Tide_Height <span class="sc">&gt;</span> <span class="fl">0.5</span> <span class="sc">~</span> <span class="st">"Submerged"</span>,</span>
+<span id="cb78-6"><a href="#cb78-6" aria-hidden="true" tabindex="-1"></a>    Block <span class="sc">==</span> <span class="st">"8"</span> <span class="sc">&amp;</span> Tide_Height <span class="sc">&gt;</span> <span class="fl">0.5</span> <span class="sc">~</span> <span class="st">"Submerged"</span>,</span>
+<span id="cb78-7"><a href="#cb78-7" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Exposed"</span> </span>
+<span id="cb78-8"><a href="#cb78-8" aria-hidden="true" tabindex="-1"></a>  ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>avg <span class="ot">&lt;-</span> HOBO_Tides <span class="sc">%&gt;%</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Treatment, result) <span class="sc">%&gt;%</span></span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_temp =</span> <span class="fu">mean</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">min_temp  =</span> <span class="fu">min</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb79-6"><a href="#cb79-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">max_temp  =</span> <span class="fu">max</span>(Temp_C, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb79-7"><a href="#cb79-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups   =</span> <span class="st">"drop"</span></span>
+<span id="cb79-8"><a href="#cb79-8" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>HOBO_Tides<span class="sc">%&gt;%</span></span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(result<span class="sc">==</span> <span class="st">"Exposed"</span> <span class="sc">&amp;</span> Treatment<span class="sc">==</span> <span class="st">"Black"</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="fu">mean</span>(Temp_C, <span class="at">na.rm=</span><span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  mean(Temp_C, na.rm = TRUE)
+1                    26.3734</code></pre>
+</div>
+</div>
+<p>For showing Black Tiles work: take exposed days find the max temps and then average those across time</p>
+</section>
 <section id="random" class="level1">
 <h1>random</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>HOBO_clean <span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
-<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Date_Time_HST =</span> <span class="fu">mdy_hms</span>(Date_Time_HST))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>HOBO_clean <span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Date_Time_HST =</span> <span class="fu">mdy_hms</span>(Date_Time_HST))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: There was 1 warning in `mutate()`.
 ℹ In argument: `Date_Time_HST = mdy_hms(Date_Time_HST)`.
@@ -581,20 +754,20 @@ Caused by warning:
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
-<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
-<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>    Date_Time_HST <span class="sc">&gt;=</span> <span class="fu">mdy_hms</span>(<span class="st">"07/01/2026 01:00:00"</span>),</span>
-<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>    Date_Time_HST <span class="sc">&lt;=</span> <span class="fu">mdy_hms</span>(<span class="st">"07/04/2026 23:00:00"</span>)</span>
-<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> HOBO_clean <span class="sc">%&gt;%</span></span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a>    Date_Time_HST <span class="sc">&gt;=</span> <span class="fu">mdy_hms</span>(<span class="st">"07/01/2026 01:00:00"</span>),</span>
+<span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a>    Date_Time_HST <span class="sc">&lt;=</span> <span class="fu">mdy_hms</span>(<span class="st">"07/04/2026 23:00:00"</span>)</span>
+<span id="cb84-5"><a href="#cb84-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> test, <span class="fu">aes</span>(<span class="at">x =</span> Date_Time_HST, <span class="at">y =</span> Temp_C, <span class="at">color =</span> <span class="fu">factor</span>(HOBO_ID))) <span class="sc">+</span></span>
-<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> test, <span class="fu">aes</span>(<span class="at">x =</span> Date_Time_HST, <span class="at">y =</span> Temp_C, <span class="at">color =</span> <span class="fu">factor</span>(HOBO_ID))) <span class="sc">+</span></span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Tile_Data_files/figure-html/unnamed-chunk-31-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Tile_Data_files/figure-html/unnamed-chunk-44-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
